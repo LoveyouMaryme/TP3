@@ -1,0 +1,3979 @@
+
+ ---------------------------------------------------------------------------------
+ Bienvenue dans le système de facturation de Roulons des véhicules verts (RVV)
+ ---------------------------------------------------------------------------------
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 0
+
+  L'option choisie est invalide!
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : -1
+
+  L'option choisie est invalide!
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 6
+
+  L'option choisie est invalide!
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : R
+
+  L’option choisie est invalide!
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : x
+
+  L’option choisie est invalide!
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : petit
+
+  L’option choisie est invalide!
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 07:56:08
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                0            0            
+    Intermédiaire        0            0            
+    Grand                0            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 07:56:11
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                12           11           
+    Intermédiaire        10           9            
+    Grand                3            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  Aucune facture à afficher...
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	H
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	g
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	-1
+
+  Le nombre de véhicules à louer est invalide!
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	7
+
+  Le nombre de véhicules à louer est invalide!
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	0
+
+  La location des véhicules de type H et de grandeur G est annulée...
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 07:57:08
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                0            0            
+    Intermédiaire        0            0            
+    Grand                0            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 07:57:11
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                12           11           
+    Intermédiaire        10           9            
+    Grand                3            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  Aucune facture à afficher...
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	h
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	g
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	4
+
+
+  Le nombre de véhicules à louer (4) est supérieur au nombre de véhicules disponibles(3)
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	0
+
+  La location des véhicules de type H et de grandeur G est annulée...
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 07:57:52
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                0            0            
+    Intermédiaire        0            0            
+    Grand                0            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 07:57:54
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                12           11           
+    Intermédiaire        10           9            
+    Grand                3            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  Aucune facture à afficher...
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	h
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	p
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	t
+
+  Le nombre de véhicules à louer est invalide!
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	R
+
+  Le nombre de véhicules à louer est invalide!
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	-1
+
+  Le nombre de véhicules à louer est invalide!
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	10
+
+  Le nombre de véhicules à louer est invalide!
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	0
+
+  La location des véhicules de type H et de grandeur P est annulée...
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	a
+
+  Le type de véhicule est invalide!
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	T
+
+  Le type de véhicule est invalide!
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	3
+
+  Le type de véhicule est invalide!
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	h
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	k
+
+  La grandeur du véhicule est invalide!
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	y
+
+  La grandeur du véhicule est invalide!
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	7
+
+  La grandeur du véhicule est invalide!
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	p
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	-1
+
+  Le nombre de véhicules à louer est invalide!
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	9
+
+  Le nombre de véhicules à louer est invalide!
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	m
+
+  Le nombre de véhicules à louer est invalide!
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	31
+
+  Le nombre de jours de location est invalide!
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	W
+
+  Le nombre de jours de location est invalide!
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	0
+
+  Le nombre de jours de location est invalide!
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	2
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	t
+
+  La réponse est invalide!
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	w
+
+  La réponse est invalide!
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	2
+
+  La réponse est invalide!
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	O
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	e
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	p
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	0
+
+  La location des véhicules de type E et de grandeur P est annulée...
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): A
+
+  Le prénom est invalide!
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): Alpha Beta Gamma Epsilon Noah Delta Beau
+
+  Le prénom est invalide!
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): Noah
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): Barry Barry Barry Barry Barry Barry Barry
+
+  Le nom est invalide!
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): B
+
+  Le nom est invalide!
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): Barry
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): 438 221 1478
+
+  Le numéro de téléphone est invalide!
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): 438-221-147
+
+  Le numéro de téléphone est invalide!
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): 438 221-1478
+
+  Le numéro de téléphone est invalide!
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): (438) 221-1478
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): L1531171274-08
+
+  Le numéro de permis de conduire est invalide!
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): L153117127408
+
+  Le numéro de permis de conduire est invalide!
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): L1531-171274-087
+
+  Le numéro de permis de conduire est invalide!
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): 1531-171274-08
+
+  Le numéro de permis de conduire est invalide!
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): L1531-171274-08
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	g
+
+  Le mode de paiement est invalide!
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	r
+
+  Le mode de paiement est invalide!
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	X
+
+  Le mode de paiement est invalide!
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	3
+
+  Le mode de paiement est invalide!
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	d
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 07:59:02
+    Facture No     1
+  --------------------------------------------------------
+
+    Prénom et nom       Noah Barry
+    Téléphone           (438) 221-1478
+    Permis de conduire  L1531-171274-08
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 10:59:02
+    Date de retour     02-04-2025 10:59:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       13,50$
+    Montant de la location             111,50$
+    Montant de l'assurance             27,00$
+
+
+    Sous-total                         138,50$
+    Montant TPS                        6,93$
+    Montant TVQ                        13,82$
+    Montant total                      159,24$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:03:29
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                1            0            
+    Intermédiaire        0            0            
+    Grand                0            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:03:33
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                11           11           
+    Intermédiaire        10           9            
+    Grand                3            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 07:59:02
+    Facture No     1
+  --------------------------------------------------------
+
+    Prénom et nom       Noah Barry
+    Téléphone           (438) 221-1478
+    Permis de conduire  L1531-171274-08
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 10:59:02
+    Date de retour     02-04-2025 10:59:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       13,50$
+    Montant de la location             111,50$
+    Montant de l'assurance             27,00$
+
+
+    Sous-total                         138,50$
+    Montant TPS                        6,93$
+    Montant TVQ                        13,82$
+    Montant total                      159,24$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	e
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	p
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	5
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	2
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	e
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	p
+
+  Vous avez déjà loué un ou des véhicules de ce type et de cette grandeur...
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	H
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	g
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	5
+
+
+  Le nombre de véhicules à louer (5) est supérieur au nombre de véhicules disponibles(3)
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	0
+
+  La location des véhicules de type H et de grandeur G est annulée...
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): Albert
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): Soumah
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): (514) 673-5589
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): S1234-567891-11
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	c
+
+  Entrez le type de la carte de crédit
+  (V ou v pour Visa, et M ou m pour MasterCard):	m
+
+  Entrez le numéro de la carte de crédit (Exemple : 1234 5678 9123 4567) :	1234 5678 9123 4567
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:04:06
+    Facture No     2
+  --------------------------------------------------------
+
+    Prénom et nom       Albert Soumah
+    Téléphone           (514) 673-5589
+    Permis de conduire  S1234-567891-11
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 4567
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:04:06
+    Date de retour     02-04-2025 11:04:06
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             455,00$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         455,00$
+    Montant TPS                        22,75$
+    Montant TVQ                        45,39$
+    Montant total                      523,14$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:06:58
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                1            5            
+    Intermédiaire        0            0            
+    Grand                0            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:07:02
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                11           6            
+    Intermédiaire        10           9            
+    Grand                3            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 07:59:02
+    Facture No     1
+  --------------------------------------------------------
+
+    Prénom et nom       Noah Barry
+    Téléphone           (438) 221-1478
+    Permis de conduire  L1531-171274-08
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 10:59:02
+    Date de retour     02-04-2025 10:59:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       13,50$
+    Montant de la location             111,50$
+    Montant de l'assurance             27,00$
+
+
+    Sous-total                         138,50$
+    Montant TPS                        6,93$
+    Montant TVQ                        13,82$
+    Montant total                      159,24$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:04:06
+    Facture No     2
+  --------------------------------------------------------
+
+    Prénom et nom       Albert Soumah
+    Téléphone           (514) 673-5589
+    Permis de conduire  S1234-567891-11
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 4567
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:04:06
+    Date de retour     02-04-2025 11:04:06
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             455,00$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         455,00$
+    Montant TPS                        22,75$
+    Montant TVQ                        45,39$
+    Montant total                      523,14$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	h
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	i
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	3
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	E
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	P
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	3
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	e
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	I
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	3
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	H
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	g
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	4
+
+
+  Le nombre de véhicules à louer (4) est supérieur au nombre de véhicules disponibles(3)
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	3
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): Daniel
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): Montebello
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): 514 789-1230
+
+  Le numéro de téléphone est invalide!
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): (514) 789-1230
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): B2531-281285-06
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	C
+
+  Entrez le type de la carte de crédit
+  (V ou v pour Visa, et M ou m pour MasterCard):	L
+
+  Le type de la carte de crédit est invalide!
+
+  Entrez le type de la carte de crédit
+  (V ou v pour Visa, et M ou m pour MasterCard):	H
+
+  Le type de la carte de crédit est invalide!
+
+  Entrez le type de la carte de crédit
+  (V ou v pour Visa, et M ou m pour MasterCard):	v
+
+  Entrez le numéro de la carte de crédit (Exemple : 1234 5678 9123 4567) :	40001234 5678 9010
+
+  Le numéro de la carte de crédit est invalide!
+
+  Entrez le numéro de la carte de crédit (Exemple : 1234 5678 9123 4567) :	4000 1234 56789010
+
+  Le numéro de la carte de crédit est invalide!
+
+  Entrez le numéro de la carte de crédit (Exemple : 1234 5678 9123 4567) :	40001234 56789010
+
+  Le numéro de la carte de crédit est invalide!
+
+  Entrez le numéro de la carte de crédit (Exemple : 1234 5678 9123 4567) :	4000123456789010
+
+  Le numéro de la carte de crédit est invalide!
+
+  Entrez le numéro de la carte de crédit (Exemple : 1234 5678 9123 4567) :	4000 1234 5678 9010
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:07:27
+    Facture No     3
+  --------------------------------------------------------
+
+    Prénom et nom       Daniel Montebello
+    Téléphone           (514) 789-1230
+    Permis de conduire  B2531-281285-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    Visa
+    Numéro de la carte de crédit  XXXX XXXX XXXX 9010
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             136,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             151,50$
+    Montant de l'assurance             38,25$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+
+    Sous-total                         793,50$
+    Montant TPS                        39,67$
+    Montant TVQ                        79,15$
+    Montant total                      912,33$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:11:07
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                1            6            
+    Intermédiaire        1            1            
+    Grand                1            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:11:15
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                11           5            
+    Intermédiaire        9            8            
+    Grand                2            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 07:59:02
+    Facture No     1
+  --------------------------------------------------------
+
+    Prénom et nom       Noah Barry
+    Téléphone           (438) 221-1478
+    Permis de conduire  L1531-171274-08
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 10:59:02
+    Date de retour     02-04-2025 10:59:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       13,50$
+    Montant de la location             111,50$
+    Montant de l'assurance             27,00$
+
+
+    Sous-total                         138,50$
+    Montant TPS                        6,93$
+    Montant TVQ                        13,82$
+    Montant total                      159,24$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:04:06
+    Facture No     2
+  --------------------------------------------------------
+
+    Prénom et nom       Albert Soumah
+    Téléphone           (514) 673-5589
+    Permis de conduire  S1234-567891-11
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 4567
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:04:06
+    Date de retour     02-04-2025 11:04:06
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             455,00$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         455,00$
+    Montant TPS                        22,75$
+    Montant TVQ                        45,39$
+    Montant total                      523,14$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:07:27
+    Facture No     3
+  --------------------------------------------------------
+
+    Prénom et nom       Daniel Montebello
+    Téléphone           (514) 789-1230
+    Permis de conduire  B2531-281285-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    Visa
+    Numéro de la carte de crédit  XXXX XXXX XXXX 9010
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             136,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             151,50$
+    Montant de l'assurance             38,25$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+
+    Sous-total                         793,50$
+    Montant TPS                        39,67$
+    Montant TVQ                        79,15$
+    Montant total                      912,33$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	H
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	i
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	3
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	e
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	i
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	20
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): Frederic
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): Costin
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): (514) 757-1452
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): A3115-201371-04
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	c
+
+  Entrez le type de la carte de crédit
+  (V ou v pour Visa, et M ou m pour MasterCard):	m
+
+  Entrez le numéro de la carte de crédit (Exemple : 1234 5678 9123 4567) :	5258 9712 3456 7890
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:13:58
+    Facture No     4
+  --------------------------------------------------------
+
+    Prénom et nom       Frederic Costin
+    Téléphone           (514) 757-1452
+    Permis de conduire  A3115-201371-04
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 7890
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:13:58
+    Date de retour     03-04-2025 11:13:58
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  20
+    Date de location   31-03-2025 11:13:58
+    Date de retour     20-04-2025 11:13:58
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             808,00$
+    Montant de l'assurance             0,00$
+    Rabais sur le prix de location     10,10$
+
+
+    Sous-total                         1032,25$
+    Montant TPS                        51,61$
+    Montant TVQ                        102,97$
+    Montant total                      1186,83$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:15:55
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                1            6            
+    Intermédiaire        2            2            
+    Grand                1            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:16:00
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                11           5            
+    Intermédiaire        8            7            
+    Grand                2            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 07:59:02
+    Facture No     1
+  --------------------------------------------------------
+
+    Prénom et nom       Noah Barry
+    Téléphone           (438) 221-1478
+    Permis de conduire  L1531-171274-08
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 10:59:02
+    Date de retour     02-04-2025 10:59:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       13,50$
+    Montant de la location             111,50$
+    Montant de l'assurance             27,00$
+
+
+    Sous-total                         138,50$
+    Montant TPS                        6,93$
+    Montant TVQ                        13,82$
+    Montant total                      159,24$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:04:06
+    Facture No     2
+  --------------------------------------------------------
+
+    Prénom et nom       Albert Soumah
+    Téléphone           (514) 673-5589
+    Permis de conduire  S1234-567891-11
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 4567
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:04:06
+    Date de retour     02-04-2025 11:04:06
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             455,00$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         455,00$
+    Montant TPS                        22,75$
+    Montant TVQ                        45,39$
+    Montant total                      523,14$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:07:27
+    Facture No     3
+  --------------------------------------------------------
+
+    Prénom et nom       Daniel Montebello
+    Téléphone           (514) 789-1230
+    Permis de conduire  B2531-281285-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    Visa
+    Numéro de la carte de crédit  XXXX XXXX XXXX 9010
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             136,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             151,50$
+    Montant de l'assurance             38,25$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+
+    Sous-total                         793,50$
+    Montant TPS                        39,67$
+    Montant TVQ                        79,15$
+    Montant total                      912,33$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:13:58
+    Facture No     4
+  --------------------------------------------------------
+
+    Prénom et nom       Frederic Costin
+    Téléphone           (514) 757-1452
+    Permis de conduire  A3115-201371-04
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 7890
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:13:58
+    Date de retour     03-04-2025 11:13:58
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  20
+    Date de location   31-03-2025 11:13:58
+    Date de retour     20-04-2025 11:13:58
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             808,00$
+    Montant de l'assurance             0,00$
+    Rabais sur le prix de location     10,10$
+
+
+    Sous-total                         1032,25$
+    Montant TPS                        51,61$
+    Montant TVQ                        102,97$
+    Montant total                      1186,83$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	e
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	g
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	5
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	10
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	e
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	i
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	15
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): Alpha
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): Beta
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): (450) 123-4587
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): D1531-282385-03
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	d
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:19:19
+    Facture No     5
+  --------------------------------------------------------
+
+    Prénom et nom       Alpha Beta
+    Téléphone           (450) 123-4587
+    Permis de conduire  D1531-282385-03
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    5
+    Nombre de jours de location  10
+    Date de location   31-03-2025 11:19:19
+    Date de retour     10-04-2025 11:19:19
+    Prix de la location par jour       55,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             2762,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  15
+    Date de location   31-03-2025 11:19:19
+    Date de retour     15-04-2025 11:19:19
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             757,50$
+    Montant de l'assurance             191,25$
+
+
+    Sous-total                         3711,25$
+    Montant TPS                        185,56$
+    Montant TVQ                        370,20$
+    Montant total                      4267,01$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:22:22
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                1            6            
+    Intermédiaire        2            3            
+    Grand                1            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:22:27
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                11           5            
+    Intermédiaire        8            6            
+    Grand                2            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 07:59:02
+    Facture No     1
+  --------------------------------------------------------
+
+    Prénom et nom       Noah Barry
+    Téléphone           (438) 221-1478
+    Permis de conduire  L1531-171274-08
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 10:59:02
+    Date de retour     02-04-2025 10:59:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       13,50$
+    Montant de la location             111,50$
+    Montant de l'assurance             27,00$
+
+
+    Sous-total                         138,50$
+    Montant TPS                        6,93$
+    Montant TVQ                        13,82$
+    Montant total                      159,24$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:04:06
+    Facture No     2
+  --------------------------------------------------------
+
+    Prénom et nom       Albert Soumah
+    Téléphone           (514) 673-5589
+    Permis de conduire  S1234-567891-11
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 4567
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:04:06
+    Date de retour     02-04-2025 11:04:06
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             455,00$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         455,00$
+    Montant TPS                        22,75$
+    Montant TVQ                        45,39$
+    Montant total                      523,14$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:07:27
+    Facture No     3
+  --------------------------------------------------------
+
+    Prénom et nom       Daniel Montebello
+    Téléphone           (514) 789-1230
+    Permis de conduire  B2531-281285-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    Visa
+    Numéro de la carte de crédit  XXXX XXXX XXXX 9010
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             136,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             151,50$
+    Montant de l'assurance             38,25$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+
+    Sous-total                         793,50$
+    Montant TPS                        39,67$
+    Montant TVQ                        79,15$
+    Montant total                      912,33$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:13:58
+    Facture No     4
+  --------------------------------------------------------
+
+    Prénom et nom       Frederic Costin
+    Téléphone           (514) 757-1452
+    Permis de conduire  A3115-201371-04
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 7890
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:13:58
+    Date de retour     03-04-2025 11:13:58
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  20
+    Date de location   31-03-2025 11:13:58
+    Date de retour     20-04-2025 11:13:58
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             808,00$
+    Montant de l'assurance             0,00$
+    Rabais sur le prix de location     10,10$
+
+
+    Sous-total                         1032,25$
+    Montant TPS                        51,61$
+    Montant TVQ                        102,97$
+    Montant total                      1186,83$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:19:19
+    Facture No     5
+  --------------------------------------------------------
+
+    Prénom et nom       Alpha Beta
+    Téléphone           (450) 123-4587
+    Permis de conduire  D1531-282385-03
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    5
+    Nombre de jours de location  10
+    Date de location   31-03-2025 11:19:19
+    Date de retour     10-04-2025 11:19:19
+    Prix de la location par jour       55,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             2762,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  15
+    Date de location   31-03-2025 11:19:19
+    Date de retour     15-04-2025 11:19:19
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             757,50$
+    Montant de l'assurance             191,25$
+
+
+    Sous-total                         3711,25$
+    Montant TPS                        185,56$
+    Montant TVQ                        370,20$
+    Montant total                      4267,01$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	h
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	g
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	3
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	h
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	g
+
+  Vous avez déjà loué un ou des véhicules de ce type et de cette grandeur...
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	h
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	i
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	5
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	1
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): Sekou
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): Bamba
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): (514) 777-6398
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): B1531-303596-03
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	d
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:23:44
+    Facture No     6
+  --------------------------------------------------------
+
+    Prénom et nom       Sekou Bamba
+    Téléphone           (514) 777-6398
+    Permis de conduire  B1531-303596-03
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:23:44
+    Date de retour     03-04-2025 11:23:44
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    5
+    Nombre de jours de location  1
+    Date de location   31-03-2025 11:23:44
+    Date de retour     01-04-2025 11:23:44
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             301,25$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         544,25$
+    Montant TPS                        27,21$
+    Montant TVQ                        54,29$
+    Montant total                      625,75$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:25:28
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                1            6            
+    Intermédiaire        7            3            
+    Grand                2            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:25:32
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                11           5            
+    Intermédiaire        3            6            
+    Grand                1            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 07:59:02
+    Facture No     1
+  --------------------------------------------------------
+
+    Prénom et nom       Noah Barry
+    Téléphone           (438) 221-1478
+    Permis de conduire  L1531-171274-08
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 10:59:02
+    Date de retour     02-04-2025 10:59:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       13,50$
+    Montant de la location             111,50$
+    Montant de l'assurance             27,00$
+
+
+    Sous-total                         138,50$
+    Montant TPS                        6,93$
+    Montant TVQ                        13,82$
+    Montant total                      159,24$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:04:06
+    Facture No     2
+  --------------------------------------------------------
+
+    Prénom et nom       Albert Soumah
+    Téléphone           (514) 673-5589
+    Permis de conduire  S1234-567891-11
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 4567
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:04:06
+    Date de retour     02-04-2025 11:04:06
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             455,00$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         455,00$
+    Montant TPS                        22,75$
+    Montant TVQ                        45,39$
+    Montant total                      523,14$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:07:27
+    Facture No     3
+  --------------------------------------------------------
+
+    Prénom et nom       Daniel Montebello
+    Téléphone           (514) 789-1230
+    Permis de conduire  B2531-281285-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    Visa
+    Numéro de la carte de crédit  XXXX XXXX XXXX 9010
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             136,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             151,50$
+    Montant de l'assurance             38,25$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+
+    Sous-total                         793,50$
+    Montant TPS                        39,67$
+    Montant TVQ                        79,15$
+    Montant total                      912,33$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:13:58
+    Facture No     4
+  --------------------------------------------------------
+
+    Prénom et nom       Frederic Costin
+    Téléphone           (514) 757-1452
+    Permis de conduire  A3115-201371-04
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 7890
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:13:58
+    Date de retour     03-04-2025 11:13:58
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  20
+    Date de location   31-03-2025 11:13:58
+    Date de retour     20-04-2025 11:13:58
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             808,00$
+    Montant de l'assurance             0,00$
+    Rabais sur le prix de location     10,10$
+
+
+    Sous-total                         1032,25$
+    Montant TPS                        51,61$
+    Montant TVQ                        102,97$
+    Montant total                      1186,83$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:19:19
+    Facture No     5
+  --------------------------------------------------------
+
+    Prénom et nom       Alpha Beta
+    Téléphone           (450) 123-4587
+    Permis de conduire  D1531-282385-03
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    5
+    Nombre de jours de location  10
+    Date de location   31-03-2025 11:19:19
+    Date de retour     10-04-2025 11:19:19
+    Prix de la location par jour       55,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             2762,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  15
+    Date de location   31-03-2025 11:19:19
+    Date de retour     15-04-2025 11:19:19
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             757,50$
+    Montant de l'assurance             191,25$
+
+
+    Sous-total                         3711,25$
+    Montant TPS                        185,56$
+    Montant TVQ                        370,20$
+    Montant total                      4267,01$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:23:44
+    Facture No     6
+  --------------------------------------------------------
+
+    Prénom et nom       Sekou Bamba
+    Téléphone           (514) 777-6398
+    Permis de conduire  B1531-303596-03
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:23:44
+    Date de retour     03-04-2025 11:23:44
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    5
+    Nombre de jours de location  1
+    Date de location   31-03-2025 11:23:44
+    Date de retour     01-04-2025 11:23:44
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             301,25$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         544,25$
+    Montant TPS                        27,21$
+    Montant TVQ                        54,29$
+    Montant total                      625,75$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	h
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	g
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	2
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	e
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	G
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	1
+
+
+  Le nombre de véhicules à louer (1) est supérieur au nombre de véhicules disponibles(0)
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	0
+
+  La location des véhicules de type E et de grandeur G est annulée...
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	H
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	I
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	4
+
+
+  Le nombre de véhicules à louer (4) est supérieur au nombre de véhicules disponibles(3)
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	3
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	5
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	R
+
+  Le type de véhicule est invalide!
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	E
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	I
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	3
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	5
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	Ben
+
+  La réponse est invalide!
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): Ben
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): Touré
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): (450) 589-1478
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): T3531-282385-06
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	C
+
+  Entrez le type de la carte de crédit
+  (V ou v pour Visa, et M ou m pour MasterCard):	M
+
+  Entrez le numéro de la carte de crédit (Exemple : 1234 5678 9123 4567) :	1012 4970 3456 7890
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:26:30
+    Facture No     7
+  --------------------------------------------------------
+
+    Prénom et nom       Ben Touré
+    Téléphone           (450) 589-1478
+    Permis de conduire  T3531-282385-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 7890
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:26:30
+    Date de retour     02-04-2025 11:26:30
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             131,00$
+    Montant de l'assurance             31,00$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    3
+    Nombre de jours de location  5
+    Date de location   31-03-2025 11:26:30
+    Date de retour     05-04-2025 11:26:30
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             903,75$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    3
+    Nombre de jours de location  5
+    Date de location   31-03-2025 11:26:30
+    Date de retour     05-04-2025 11:26:30
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             757,50$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         1823,25$
+    Montant TPS                        91,16$
+    Montant TVQ                        181,87$
+    Montant total                      2096,28$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:31:52
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                1            6            
+    Intermédiaire        10           6            
+    Grand                3            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:32:02
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                11           5            
+    Intermédiaire        0            3            
+    Grand                0            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 07:59:02
+    Facture No     1
+  --------------------------------------------------------
+
+    Prénom et nom       Noah Barry
+    Téléphone           (438) 221-1478
+    Permis de conduire  L1531-171274-08
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 10:59:02
+    Date de retour     02-04-2025 10:59:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       13,50$
+    Montant de la location             111,50$
+    Montant de l'assurance             27,00$
+
+
+    Sous-total                         138,50$
+    Montant TPS                        6,93$
+    Montant TVQ                        13,82$
+    Montant total                      159,24$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:04:06
+    Facture No     2
+  --------------------------------------------------------
+
+    Prénom et nom       Albert Soumah
+    Téléphone           (514) 673-5589
+    Permis de conduire  S1234-567891-11
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 4567
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:04:06
+    Date de retour     02-04-2025 11:04:06
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             455,00$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         455,00$
+    Montant TPS                        22,75$
+    Montant TVQ                        45,39$
+    Montant total                      523,14$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:07:27
+    Facture No     3
+  --------------------------------------------------------
+
+    Prénom et nom       Daniel Montebello
+    Téléphone           (514) 789-1230
+    Permis de conduire  B2531-281285-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    Visa
+    Numéro de la carte de crédit  XXXX XXXX XXXX 9010
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             136,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             151,50$
+    Montant de l'assurance             38,25$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+
+    Sous-total                         793,50$
+    Montant TPS                        39,67$
+    Montant TVQ                        79,15$
+    Montant total                      912,33$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:13:58
+    Facture No     4
+  --------------------------------------------------------
+
+    Prénom et nom       Frederic Costin
+    Téléphone           (514) 757-1452
+    Permis de conduire  A3115-201371-04
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 7890
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:13:58
+    Date de retour     03-04-2025 11:13:58
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  20
+    Date de location   31-03-2025 11:13:58
+    Date de retour     20-04-2025 11:13:58
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             808,00$
+    Montant de l'assurance             0,00$
+    Rabais sur le prix de location     10,10$
+
+
+    Sous-total                         1032,25$
+    Montant TPS                        51,61$
+    Montant TVQ                        102,97$
+    Montant total                      1186,83$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:19:19
+    Facture No     5
+  --------------------------------------------------------
+
+    Prénom et nom       Alpha Beta
+    Téléphone           (450) 123-4587
+    Permis de conduire  D1531-282385-03
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    5
+    Nombre de jours de location  10
+    Date de location   31-03-2025 11:19:19
+    Date de retour     10-04-2025 11:19:19
+    Prix de la location par jour       55,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             2762,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  15
+    Date de location   31-03-2025 11:19:19
+    Date de retour     15-04-2025 11:19:19
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             757,50$
+    Montant de l'assurance             191,25$
+
+
+    Sous-total                         3711,25$
+    Montant TPS                        185,56$
+    Montant TVQ                        370,20$
+    Montant total                      4267,01$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:23:44
+    Facture No     6
+  --------------------------------------------------------
+
+    Prénom et nom       Sekou Bamba
+    Téléphone           (514) 777-6398
+    Permis de conduire  B1531-303596-03
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:23:44
+    Date de retour     03-04-2025 11:23:44
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    5
+    Nombre de jours de location  1
+    Date de location   31-03-2025 11:23:44
+    Date de retour     01-04-2025 11:23:44
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             301,25$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         544,25$
+    Montant TPS                        27,21$
+    Montant TVQ                        54,29$
+    Montant total                      625,75$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:26:30
+    Facture No     7
+  --------------------------------------------------------
+
+    Prénom et nom       Ben Touré
+    Téléphone           (450) 589-1478
+    Permis de conduire  T3531-282385-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 7890
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:26:30
+    Date de retour     02-04-2025 11:26:30
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             131,00$
+    Montant de l'assurance             31,00$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    3
+    Nombre de jours de location  5
+    Date de location   31-03-2025 11:26:30
+    Date de retour     05-04-2025 11:26:30
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             903,75$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    3
+    Nombre de jours de location  5
+    Date de location   31-03-2025 11:26:30
+    Date de retour     05-04-2025 11:26:30
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             757,50$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         1823,25$
+    Montant TPS                        91,16$
+    Montant TVQ                        181,87$
+    Montant total                      2096,28$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 1
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	H
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	p
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	5
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	3
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	o
+
+  Entrez le type du véhicule à louer
+  (H ou h pour Hybride, et E ou e pour électrique) :	E
+
+  Entrez la grandeur du véhicule à louer
+  (P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :	i
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	4
+
+
+  Le nombre de véhicules à louer (4) est supérieur au nombre de véhicules disponibles(3)
+
+  Entrez le nombre de véhicules à louer
+  (0 à 5 inclusivement) :	3
+
+  Entrez le nombre de jours de location
+  (supérieur à 0 et inférieur ou égal à 30) :	3
+
+  Désirez-vous prendre l'assurance
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Désirez-vous louer d'autres véhicules
+  (O ou o pour Oui, N ou n pour Non) ? :	n
+
+  Entrez le prénom du locataire (entre 2 et 30 caractères inclusivement): Pascal
+
+
+  Entrez le nom du locataire (entre 2 et 30 caractères inclusivement): Feindouno
+
+  Entrez le numéro de téléphone du locataire (Exemple : (514) 784-6589): (438) 787-3652
+
+  Entrez le numéro de permis de conduire du locataire (Exemple : D1234-567891-23): F4535-303596-09
+
+  Entrez le mode de paiement
+  (D ou d pour Débit, C ou c pour Crédit):	d
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:33:02
+    Facture No     8
+  --------------------------------------------------------
+
+    Prénom et nom       Pascal Feindouno
+    Téléphone           (438) 787-3652
+    Permis de conduire  F4535-303596-09
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:33:02
+    Date de retour     03-04-2025 11:33:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             836,25$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    3
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:33:02
+    Date de retour     03-04-2025 11:33:02
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             454,50$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         1290,75$
+    Montant TPS                        64,54$
+    Montant TVQ                        128,75$
+    Montant total                      1484,04$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 2
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:34:25
+  -----------------------------------------------------------
+
+    Nombre de véhicules loués par type et par grandeur
+    ***************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                6            6            
+    Intermédiaire        10           9            
+    Grand                3            5            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 3
+
+  -----------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse :       1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone :     (438) 222-1111
+    Date et Heure : 31-03-2025 08:34:32
+  -----------------------------------------------------------
+
+    Nombre de véhicules disponibles dans l'inventaire
+    *************************************************
+    Grandeur          Hybride      Électrique     
+    *****************************************
+    Petit                6            5            
+    Intermédiaire        0            0            
+    Grand                0            0            
+
+  -----------------------------------------------------------
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 4
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 07:59:02
+    Facture No     1
+  --------------------------------------------------------
+
+    Prénom et nom       Noah Barry
+    Téléphone           (438) 221-1478
+    Permis de conduire  L1531-171274-08
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 10:59:02
+    Date de retour     02-04-2025 10:59:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       13,50$
+    Montant de la location             111,50$
+    Montant de l'assurance             27,00$
+
+
+    Sous-total                         138,50$
+    Montant TPS                        6,93$
+    Montant TVQ                        13,82$
+    Montant total                      159,24$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:04:06
+    Facture No     2
+  --------------------------------------------------------
+
+    Prénom et nom       Albert Soumah
+    Téléphone           (514) 673-5589
+    Permis de conduire  S1234-567891-11
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 4567
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:04:06
+    Date de retour     02-04-2025 11:04:06
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             455,00$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         455,00$
+    Montant TPS                        22,75$
+    Montant TVQ                        45,39$
+    Montant total                      523,14$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:07:27
+    Facture No     3
+  --------------------------------------------------------
+
+    Prénom et nom       Daniel Montebello
+    Téléphone           (514) 789-1230
+    Permis de conduire  B2531-281285-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    Visa
+    Numéro de la carte de crédit  XXXX XXXX XXXX 9010
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       45,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             136,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             151,50$
+    Montant de l'assurance             38,25$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:07:27
+    Date de retour     03-04-2025 11:07:27
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+
+    Sous-total                         793,50$
+    Montant TPS                        39,67$
+    Montant TVQ                        79,15$
+    Montant total                      912,33$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:13:58
+    Facture No     4
+  --------------------------------------------------------
+
+    Prénom et nom       Frederic Costin
+    Téléphone           (514) 757-1452
+    Permis de conduire  A3115-201371-04
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 7890
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:13:58
+    Date de retour     03-04-2025 11:13:58
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       14,50$
+    Montant de la location             180,75$
+    Montant de l'assurance             43,50$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  20
+    Date de location   31-03-2025 11:13:58
+    Date de retour     20-04-2025 11:13:58
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             808,00$
+    Montant de l'assurance             0,00$
+    Rabais sur le prix de location     10,10$
+
+
+    Sous-total                         1032,25$
+    Montant TPS                        51,61$
+    Montant TVQ                        102,97$
+    Montant total                      1186,83$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:19:19
+    Facture No     5
+  --------------------------------------------------------
+
+    Prénom et nom       Alpha Beta
+    Téléphone           (450) 123-4587
+    Permis de conduire  D1531-282385-03
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    5
+    Nombre de jours de location  10
+    Date de location   31-03-2025 11:19:19
+    Date de retour     10-04-2025 11:19:19
+    Prix de la location par jour       55,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             2762,50$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    1
+    Nombre de jours de location  15
+    Date de location   31-03-2025 11:19:19
+    Date de retour     15-04-2025 11:19:19
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       12,75$
+    Montant de la location             757,50$
+    Montant de l'assurance             191,25$
+
+
+    Sous-total                         3711,25$
+    Montant TPS                        185,56$
+    Montant TVQ                        370,20$
+    Montant total                      4267,01$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:23:44
+    Facture No     6
+  --------------------------------------------------------
+
+    Prénom et nom       Sekou Bamba
+    Téléphone           (514) 777-6398
+    Permis de conduire  B1531-303596-03
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:23:44
+    Date de retour     03-04-2025 11:23:44
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             196,50$
+    Montant de l'assurance             46,50$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    5
+    Nombre de jours de location  1
+    Date de location   31-03-2025 11:23:44
+    Date de retour     01-04-2025 11:23:44
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             301,25$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         544,25$
+    Montant TPS                        27,21$
+    Montant TVQ                        54,29$
+    Montant total                      625,75$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:26:30
+    Facture No     7
+  --------------------------------------------------------
+
+    Prénom et nom       Ben Touré
+    Téléphone           (450) 589-1478
+    Permis de conduire  T3531-282385-06
+
+    Mode de paiement    Crédit
+    Type de la carte de crédit    MasterCard
+    Numéro de la carte de crédit  XXXX XXXX XXXX 7890
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Grand
+    Nombre de véhicules loués    1
+    Nombre de jours de location  2
+    Date de location   31-03-2025 11:26:30
+    Date de retour     02-04-2025 11:26:30
+    Prix de la location par jour       65,50$
+    Prix de l'assurance par jour       15,50$
+    Montant de la location             131,00$
+    Montant de l'assurance             31,00$
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    3
+    Nombre de jours de location  5
+    Date de location   31-03-2025 11:26:30
+    Date de retour     05-04-2025 11:26:30
+    Prix de la location par jour       60,25$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             903,75$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    3
+    Nombre de jours de location  5
+    Date de location   31-03-2025 11:26:30
+    Date de retour     05-04-2025 11:26:30
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             757,50$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         1823,25$
+    Montant TPS                        91,16$
+    Montant TVQ                        181,87$
+    Montant total                      2096,28$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour continuer l'affichage des factures...
+
+  --------------------------------------------------------
+    Roulons les Véhicules Verts (RVV)
+    Adresse        1500 rue Matata, Hakuna, Québec Y0Z 6Y7
+    Téléphone      (438) 222-1111
+    Date et Heure  31-03-2025 08:33:02
+    Facture No     8
+  --------------------------------------------------------
+
+    Prénom et nom       Pascal Feindouno
+    Téléphone           (438) 787-3652
+    Permis de conduire  F4535-303596-09
+
+    Mode de paiement    Débit
+
+    Type du véhicule             Hybride
+    Grandeur du véhicule         Petit
+    Nombre de véhicules loués    5
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:33:02
+    Date de retour     03-04-2025 11:33:02
+    Prix de la location par jour       55,75$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             836,25$
+    Montant de l'assurance             0,00$
+
+    Type du véhicule             Électrique
+    Grandeur du véhicule         Intermédiaire
+    Nombre de véhicules loués    3
+    Nombre de jours de location  3
+    Date de location   31-03-2025 11:33:02
+    Date de retour     03-04-2025 11:33:02
+    Prix de la location par jour       50,50$
+    Prix de l'assurance par jour       0,00$
+    Montant de la location             454,50$
+    Montant de l'assurance             0,00$
+
+
+    Sous-total                         1290,75$
+    Montant TPS                        64,54$
+    Montant TVQ                        128,75$
+    Montant total                      1484,04$
+
+    ------------------------------------------------------
+    Merci pour votre confiance!
+
+
+  Appuyer sur <ENTREE> pour réafficher le menu...
+
+
+  *** Menu de choix *** 
+  1. Facturer la location d'un véhicule
+  2. Afficher le nombre de véhicules hybrides et électriques loués
+  3. Afficher l'inventaire des véhicules
+  4. Afficher toutes les factures
+  5. Quitter le programme
+
+
+  Entrez votre choix : 5
+
+
+  Merci et à la prochaine ! 
