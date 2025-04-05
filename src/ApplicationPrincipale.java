@@ -66,9 +66,9 @@ public class ApplicationPrincipale {
     * Affiche un message de bienvenue pour l'entreprise Roulons les Véhicules Verts (RVV) (1)
     */
    public static void afficherMessageBievenue() {
-      System.out.println(ENCADRE_TITRE);
-      System.out.println(MESSAGE_BIENVENUE);
-      System.out.println(ENCADRE_TITRE);
+//      System.out.println(ENCADRE_TITRE);
+//      System.out.println(MESSAGE_BIENVENUE);
+//      System.out.println(ENCADRE_TITRE);
    }
 
    /**
@@ -78,8 +78,8 @@ public class ApplicationPrincipale {
 
       System.out.println();
       System.out.println();
-      System.out.println(MESSAGE_MENU_CHOIX);
-      System.out.printf("%s\n%s\n%s\n%s\n", CHOIX_UN, CHOIX_DEUX, CHOIX_TROIS, CHOIX_QUATRE);
+//      System.out.println(MESSAGE_MENU_CHOIX);
+//      System.out.printf("%s\n%s\n%s\n%s\n", CHOIX_UN, CHOIX_DEUX, CHOIX_TROIS, CHOIX_QUATRE);
       System.out.println();
       System.out.println();
 
@@ -122,13 +122,13 @@ public class ApplicationPrincipale {
 
 
       LocalDateTime now = LocalDateTime.now();
-      String dateNowFormatee = now.format(FORMATTER);
-
-      System.out.println("\n" + SEPARATEUR_LIGNE);
-      System.out.println(NOM_ENTREPRISE);
-      System.out.println("Adresse :       " + ADRESSE_ENTREPRISE);
-      System.out.println("Téléphone :     " + TELEPHONE_ENTREPRISE);
-      System.out.println("Date et Heure : " + dateNowFormatee);
+//      String dateNowFormatee = now.format(FORMATTER);
+//
+//      System.out.println("\n" + SEPARATEUR_LIGNE);
+//      System.out.println(NOM_ENTREPRISE);
+//      System.out.println("Adresse :       " + ADRESSE_ENTREPRISE);
+//      System.out.println("Téléphone :     " + TELEPHONE_ENTREPRISE);
+//      System.out.println("Date et Heure : " + dateNowFormatee);
 
    }
 
@@ -140,12 +140,12 @@ public class ApplicationPrincipale {
     */
    private static void afficherEnteteInventaire(boolean disponible) {
 
-      System.out.println(SEPARATEUR_LIGNE);
-      if (disponible) {
-         System.out.println("\n" + MESSAGE_NOMBRE_VEHICULE_INVENTAIRE);
-      } else {
-         System.out.println("\n" + MESSAGE_NOMBRE_VEHICULE_LOUEE);
-      }
+//      System.out.println(SEPARATEUR_LIGNE);
+//      if (disponible) {
+//         System.out.println("\n" + MESSAGE_NOMBRE_VEHICULE_INVENTAIRE);
+//      } else {
+//         System.out.println("\n" + MESSAGE_NOMBRE_VEHICULE_LOUEE);
+//      }
       System.out.println("*************************************************");
       System.out.println("Grandeur          Hybride      Électrique");
       System.out.println("****************************************");
@@ -281,26 +281,26 @@ public class ApplicationPrincipale {
     * @return Le type de véhicule valide ('h' pour Hybride, 'e' pour Électrique). (7)
     */
    public static char lireTypeVehicule() {
-      char choixType;
-      boolean estTypeValide = false;
-
-      do {
-         System.out.println();
-         System.out.println("Entrez le type du véhicule à louer");
-         System.out.print("(H ou h pour Hybride, et E ou e pour Électrique) : ");
-         choixType = Character.toLowerCase(Clavier.lireCharLn());
-
-
-         if (choixType == VEHICULE_HYBRIDE || choixType == VEHICULE_ELECTRIQUE) {
-            estTypeValide = true;
-         } else {
-            System.out.println();
-            System.out.println("Le type de véhicule est invalide!");
-         }
-
-
-      } while (!estTypeValide);
-      return choixType;
+//      char choixType;
+//      boolean estTypeValide = false;
+//
+////      do {
+////         System.out.println();
+////         System.out.println("Entrez le type du véhicule à louer");
+////         System.out.print("(H ou h pour Hybride, et E ou e pour Électrique) : ");
+////         choixType = Character.toLowerCase(Clavier.lireCharLn());
+////
+////
+////         if (choixType == VEHICULE_HYBRIDE || choixType == VEHICULE_ELECTRIQUE) {
+////            estTypeValide = true;
+////         } else {
+////            System.out.println();
+////            System.out.println("Le type de véhicule est invalide!");
+////         }
+//
+//
+////      } while (!estTypeValide);
+//      return choixType;
    }
 
    /**
@@ -316,24 +316,24 @@ public class ApplicationPrincipale {
       char choixGrandeur;
       boolean estGrandeurValide = false;
 
-      do {
-         System.out.println();
-         System.out.println("Entrez la grandeur du véhicule à louer");
-         System.out.print("(P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :    ");
-         choixGrandeur = Character.toLowerCase(Clavier.lireCharLn());
-
-         if (choixGrandeur == VEHICULE_PETIT || choixGrandeur == VEHICULE_INTERMEDIAIRE || choixGrandeur == VEHICULE_GRAND) {
-            estGrandeurValide = true;
-         } else {
-            System.out.println();
-            System.out.println("La grandeur du véhicule est invalide!");
-         }
-
-
-      } while (!estGrandeurValide);
-
-      System.out.println();
-      return choixGrandeur;
+//      do {
+//         System.out.println();
+//         System.out.println("Entrez la grandeur du véhicule à louer");
+//         System.out.print("(P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :    ");
+//         choixGrandeur = Character.toLowerCase(Clavier.lireCharLn());
+//
+//         if (choixGrandeur == VEHICULE_PETIT || choixGrandeur == VEHICULE_INTERMEDIAIRE || choixGrandeur == VEHICULE_GRAND) {
+//            estGrandeurValide = true;
+//         } else {
+//            System.out.println();
+//            System.out.println("La grandeur du véhicule est invalide!");
+//         }
+//
+//
+//      } while (!estGrandeurValide);
+//
+//      System.out.println();
+//      return choixGrandeur;
 
    }
 
@@ -379,22 +379,22 @@ public class ApplicationPrincipale {
       char choixPaiement;
       boolean estModePaiementValide = false;
 
-      do {
-         System.out.println("Entrez le mode de paiement");
-         System.out.print("(D ou d pour Débit, C ou c pour Crédit): ");
-         choixPaiement = Character.toLowerCase(Clavier.lireCharLn());
-
-         if (choixPaiement != CARTE_DEBIT && choixPaiement != CARTE_CREDIT) {
-            System.out.println();
-            System.out.println("Le mode de paiement est invalide!");
-         } else {
-            estModePaiementValide = true;
-         }
-
-         System.out.println();
-
-      } while (!estModePaiementValide);
-      return choixPaiement;
+//      do {
+//         System.out.println("Entrez le mode de paiement");
+//         System.out.print("(D ou d pour Débit, C ou c pour Crédit): ");
+//         choixPaiement = Character.toLowerCase(Clavier.lireCharLn());
+//
+//         if (choixPaiement != CARTE_DEBIT && choixPaiement != CARTE_CREDIT) {
+//            System.out.println();
+//            System.out.println("Le mode de paiement est invalide!");
+//         } else {
+//            estModePaiementValide = true;
+//         }
+//
+//         System.out.println();
+//
+//      } while (!estModePaiementValide);
+//      return choixPaiement;
    }
 
    /**
@@ -410,22 +410,22 @@ public class ApplicationPrincipale {
       char choixCarteCredit;
       boolean estCarteCreditValide = false;
 
-      do {
-         System.out.println("Entrez le type de la carte de crédit");
-         System.out.print("(V ou v pour Visa, et M ou m pour MasterCard): ");
-         choixCarteCredit = Character.toLowerCase(Clavier.lireCharLn());
-
-         if (choixCarteCredit != VISA_CARTE_CREDIT && choixCarteCredit != MC_CARTE_CREDIT) {
-            System.out.println();
-            System.out.println("Le type de la carte de crédit est invalide!");
-         } else {
-            estCarteCreditValide = true;
-         }
-
-         System.out.println();
-
-      } while (!estCarteCreditValide);
-      return choixCarteCredit;
+//      do {
+//         System.out.println("Entrez le type de la carte de crédit");
+//         System.out.print("(V ou v pour Visa, et M ou m pour MasterCard): ");
+//         choixCarteCredit = Character.toLowerCase(Clavier.lireCharLn());
+//
+//         if (choixCarteCredit != VISA_CARTE_CREDIT && choixCarteCredit != MC_CARTE_CREDIT) {
+//            System.out.println();
+//            System.out.println("Le type de la carte de crédit est invalide!");
+//         } else {
+//            estCarteCreditValide = true;
+//         }
+//
+//         System.out.println();
+//
+//      } while (!estCarteCreditValide);
+//      return choixCarteCredit;
    }
 
    /**
@@ -474,14 +474,14 @@ public class ApplicationPrincipale {
          System.out.print("(O ou o pour Oui, N ou n pour Non) ? :    ");
          choixAssurance = Character.toLowerCase(Clavier.lireCharLn());
 
-         if (choixAssurance != ASSURANCE_OUI && choixAssurance != ASSURANCE_NON) {
-            System.out.println();
-            System.out.println("La réponse est invalide!");
-         } else {
-            estChoixAssuranceValide = true;
-         }
-
-         System.out.println();
+//         if (choixAssurance != ASSURANCE_OUI && choixAssurance != ASSURANCE_NON) {
+//            System.out.println();
+//            System.out.println("La réponse est invalide!");
+//         } else {
+//            estChoixAssuranceValide = true;
+//         }
+//
+//         System.out.println();
 
       } while (!estChoixAssuranceValide);
       return choixAssurance;
@@ -498,11 +498,11 @@ public class ApplicationPrincipale {
       char grandeurVehicule;
       char reponse = ' ';
 
-      Locataire locataire;
-      VehiculeLoue vehiculeLoue;
-      LocationVehicule locationVehicule;
-      LocalDateTime dateFacture;
-      Facture facture;
+//      Locataire locataire;
+//      VehiculeLoue vehiculeLoue;
+//      LocationVehicule locationVehicule;
+//      LocalDateTime dateFacture;
+//      Facture facture;
       
       // AJOUTEZ LES VARIABLES LOCALES MANQUANTES
       // *** À COMPLÉTER
