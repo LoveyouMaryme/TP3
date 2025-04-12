@@ -10,4 +10,20 @@ public class Locataire {
         this.numeroTelephone = numeroTelephone;
         this.numeroPermisConduire = numeroPermisConduire;
     }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public String getNumeroTelephone() {
+        return numeroTelephone;
+    }
+
+    public String getNumeroPermisConduire() {
+        return numeroPermisConduire;
+    }
 }
