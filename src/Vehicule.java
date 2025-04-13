@@ -71,9 +71,9 @@ public class Vehicule {
     public String obtenirDescriptionVehicule() {
         String description = null;
 
-        if (type == H) {
+        if (this.type == H) {
             description = HYBRIDE;
-        } else if (type == E) {
+        } else if (this.type == E) {
             description = ELECTRIQUE;
         }
 
