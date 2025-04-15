@@ -18,6 +18,9 @@ public class Facture {
     public static final String ADRESSE_ENTREPRISE = "1500 rue Matata, Hakuna, Québec Y0Z 6Y7";
     public static final String TELEPHONE_ENTREPRISE = "(438) 222-1111";
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+    public static final String SYMBOL_DEVISE = "$";
+    public static final String BORDURE = "--------------------------------------------------------";
+    public static final String MSG_FIN = "Merci pour votre confiance!";
 
 
     //Déclaration des variables
@@ -112,68 +115,93 @@ public class Facture {
         float sousTotalFinal = 0;
         VehiculeLoue[] vehiculeLoues = locationVehicule.getVehiculesLoues();
 
+
         for (VehiculeLoue vehicule : vehiculeLoues) {
-            float prixlocationjour = vehicule.getVehicule().getPrixAssuranceJour();
-            int nbVehiculesLoues = vehicule.getNbrVehiculeLoue();
-            int nbJourLocation = vehicule.getNbrJourLocation();
-            float rabais = vehicule.calculerRabais();
-            float prixAssuranceJour = vehicule.getVehicule().getPrixLocationJour();
+            if (vehicule != null) {
 
-            float montantLocation = (prixlocationjour - rabais) * nbJourLocation * nbVehiculesLoues;
-            float montantAssurance = prixAssuranceJour * nbJourLocation * nbVehiculesLoues;
-            float sousTotalVehicule = montantLocation + montantAssurance;
+                float prixlocationjour = vehicule.getVehicule().getPrixAssuranceJour();
+                int nbVehiculesLoues = vehicule.getNbrVehiculeLoue();
+                int nbJourLocation = vehicule.getNbrJourLocation();
+                float rabais = vehicule.calculerRabais();
+                float prixAssuranceJour = vehicule.getVehicule().getPrixLocationJour();
 
-            sousTotalFinal = sousTotalFinal + sousTotalVehicule;
+                float montantLocation = (prixlocationjour - rabais) * nbJourLocation * nbVehiculesLoues;
+                float montantAssurance = prixAssuranceJour * nbJourLocation * nbVehiculesLoues;
+                float sousTotalVehicule = montantLocation + montantAssurance;
+
+                sousTotalFinal = sousTotalFinal + sousTotalVehicule;
+            }
         }
         this.sousTotal = sousTotalFinal;
     }
 
-    public void calculerMontantTPS(){
+    public void calculerMontantTPS() {
         this.montantTPS = this.sousTotal * TPS;
     }
 
-    public void calculerMontantTVQ(){
+    public void calculerMontantTVQ() {
         this.montantTVQ = this.sousTotal * TVQ;
     }
 
-    public void calculerMontantTotal(){
+    public void calculerMontantTotal() {
         this.montantTotal = montantTPS + montantTVQ + sousTotal;
     }
 
     //A compléter
-    public void afficherFacture(){
+    public void afficherFacture() {
+
+        VehiculeLoue[] vehiculeLoues = locationVehicule.getVehiculesLoues();
+
+        System.out.println(BORDURE);
         System.out.println(NOM_ENTREPRISE);
-    }
+        System.out.printf("%-30s%s%n", "Adresse ", ADRESSE_ENTREPRISE);
+        System.out.printf("%-30s%s%n", "Téléphone ", TELEPHONE_ENTREPRISE);
+        System.out.printf("%-30s%s%n", "Date et Heure ", getDateFacture().format(formatter));
+        System.out.printf("%-30s%s%n", "Facture No ", noFacture);
+        System.out.println(BORDURE);
 
-    // méthode de test
-    public static void main(String[] args) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        System.out.println();
 
-        LocalDateTime now = LocalDateTime.now();
-        String date = now.format(formatter);
+        System.out.printf("%-30s%s%n", "Prénom et nom", locationVehicule.getLocataire().getPrenom());
+        System.out.printf("%-30s%s%n", "Téléphone", locationVehicule.getLocataire().getNumeroTelephone());
+        System.out.printf("%-30s%s%n", "Permis de conduire", locationVehicule.getLocataire().getNumeroPermisConduire());
 
-        Vehicule vehicule1 = new Vehicule('E', 'P', 50.0f, 10.0f);
+        System.out.println();
 
-        // Création d’un véhicule loué
-        VehiculeLoue vehiculeLoue1 = new VehiculeLoue(
-                vehicule1,
-                LocalDateTime.of(2025, 4, 10, 10, 0, 0),
-                1, // Nombre de véhicules loués
-                5  // Nombre de jours
-        );
+        System.out.printf("%-30s%s%n", "Mode de paiement", obtenirDescriptionModePaiement());
+        if (this.modePaiement == C) {
+            System.out.printf("%-30s%s%n", "Type de la carte de crédit", obtenirDescriptionCarteCredit());
+            System.out.printf("%-30s%s%n", "Numéro de la carte de crédit ", this.noCredit);
+        }
 
-        LocationVehicule location = new LocationVehicule();
-        location.ajouterVehicule(vehiculeLoue1);
+        System.out.println();
 
-        Facture facture = new Facture(LocalDateTime.now(), location, Facture.D);
+        for (VehiculeLoue vehicule : vehiculeLoues) {
+            if (vehicule != null) {
 
-        // Calculs
-        facture.calculerSousTotal();
-        facture.calculerMontantTPS();
-        facture.calculerMontantTVQ();
+                System.out.printf("%-30s%s%n", "Type du véhicule ", vehicule.getVehicule().obtenirDescriptionVehicule());
+                System.out.printf("%-30s%s%n", "Grandeur du véhicule ", vehicule.getVehicule().obtenirGrandeurVehicule());
+                System.out.printf("%-30s%s%n", "Nombre de véhicules loués ", vehicule.getNbrVehiculeLoue());
+                System.out.printf("%-30s%s%n", "Nombre de jours de location ", vehicule.getNbrJourLocation());
+                System.out.printf("%-30s%s%n", "Date de location ", vehicule.getDateLocation().format(formatter));
+                System.out.printf("%-30s%s%n", "Date de retour ", vehicule.calculerDateRetour().format(formatter));
+                System.out.printf("%-30s%.2f%s%n", "Prix de la location par jour ", vehicule.getVehicule().getPrixLocationJour(), SYMBOL_DEVISE);
+                System.out.printf("%-30s%.2f%s%n", "Prix de l'assurance par jour ", vehicule.getVehicule().getPrixAssuranceJour(), SYMBOL_DEVISE);
+                System.out.printf("%-30s%.2f%s%n", "Montant de la location ", vehicule.getVehicule().getPrixLocationJour() * vehicule.getNbrVehiculeLoue() * vehicule.getNbrJourLocation(), SYMBOL_DEVISE);
+                System.out.printf("%-30s%.2f%s%n", "Montant de l'assurance ", vehicule.getVehicule().getPrixAssuranceJour() * vehicule.getNbrVehiculeLoue() * vehicule.getNbrJourLocation(), SYMBOL_DEVISE);
 
-        facture.afficherFacture();
+                System.out.println();
+            }
+        }
 
+        System.out.printf("%-30s%.2f%s%n", "Sous-total ", sousTotal, SYMBOL_DEVISE);
+        System.out.printf("%-30s%.2f%s%n", "Montant TPS ", montantTPS, SYMBOL_DEVISE);
+        System.out.printf("%-30s%.2f%s%n", "Montant TVQ ", montantTVQ, SYMBOL_DEVISE);
+        System.out.printf("%-30s%.2f%s%n", "Montant Total ", montantTotal, SYMBOL_DEVISE);
+
+        System.out.println(BORDURE);
+        System.out.println(MSG_FIN);
     }
 }
+
 
