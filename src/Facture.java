@@ -87,6 +87,11 @@ public class Facture {
         this.noCredit = noCredit;
     }
 
+    /**
+     * Retourne la description textuelle du mode de paiement (Débit ou Crédit).
+     *
+     * @return la description du mode de paiement
+     */
     public String obtenirDescriptionModePaiement() {
         String modePaiement = null;
 
@@ -99,6 +104,11 @@ public class Facture {
         return modePaiement;
     }
 
+    /**
+     * Retourne la description textuelle du type de carte de crédit (Visa ou MasterCard).
+     *
+     * @return la description du type de carte de crédit
+     */
     public String obtenirDescriptionCarteCredit() {
         String carteCredit = null;
 
@@ -111,6 +121,9 @@ public class Facture {
         return carteCredit;
     }
 
+    /**
+     * Calcule et met à jour le sous-total de la facture en fonction des véhicules loués.
+     */
     public void calculerSousTotal() {
         float sousTotalFinal = 0;
         VehiculeLoue[] vehiculeLoues = locationVehicule.getVehiculesLoues();
@@ -135,19 +148,30 @@ public class Facture {
         this.sousTotal = sousTotalFinal;
     }
 
+    /**
+     * Calcule et met à jour le montant de la TPS basé sur le sous-total.
+     */
     public void calculerMontantTPS() {
         this.montantTPS = this.sousTotal * TPS;
     }
 
+    /**
+     * Calcule et met à jour le montant de la TVQ basé sur le sous-total.
+     */
     public void calculerMontantTVQ() {
         this.montantTVQ = this.sousTotal * TVQ;
     }
 
+    /**
+     * Calcule et met à jour le montant total de la facture incluant TPS et TVQ.
+     */
     public void calculerMontantTotal() {
         this.montantTotal = montantTPS + montantTVQ + sousTotal;
     }
 
-    //A compléter
+    /**
+     * Affiche la facture détaillée.
+     */
     public void afficherFacture() {
 
         VehiculeLoue[] vehiculeLoues = locationVehicule.getVehiculesLoues();
@@ -201,6 +225,56 @@ public class Facture {
 
         System.out.println(BORDURE);
         System.out.println(MSG_FIN);
+    }
+
+    /**
+     * Formate la facture sous forme de chaîne de caractères (CSV) pour être exportée.
+     *
+     * @return une chaîne représentant la facture formatée
+     */
+    public String formaterFacture() {
+
+        String factureString = "";
+
+        factureString += noFacture + ";" + dateFacture.format(formatter) + ";" + locationVehicule.getLocataire().getPrenom() + " "
+                + locationVehicule.getLocataire().getNom() + ";" + locationVehicule.getLocataire().getNumeroTelephone()
+                + ";" + locationVehicule.getLocataire().getNumeroPermisConduire() + ";" + obtenirDescriptionModePaiement() + ";"
+                + obtenirDescriptionCarteCredit() + ";" + getNoCredit() + ";";
+
+        VehiculeLoue[] vehiculeLoues = locationVehicule.getVehiculesLoues();
+
+        for (int i = 0; i < vehiculeLoues.length; i++) {
+            if (vehiculeLoues[i] != null) {
+                int nbVehicules = locationVehicule.getVehiculesLoues().length;
+
+                factureString = factureString + vehiculeLoues[i].getVehicule().obtenirDescriptionVehicule() + ";";
+                factureString = factureString + vehiculeLoues[i].getVehicule().obtenirGrandeurVehicule() + ";";
+                factureString = factureString + vehiculeLoues[i].getNbrVehiculeLoue() + ";";
+                factureString = factureString + vehiculeLoues[i].getNbrJourLocation() + ";";
+
+                factureString = factureString + vehiculeLoues[i].getDateLocation().format(formatter) + ";";
+                factureString = factureString + vehiculeLoues[i].calculerDateRetour().format(formatter) + ";";
+
+                factureString = factureString + String.format("%.2f", vehiculeLoues[i].getVehicule().getPrixLocationJour()) + ";";
+                factureString = factureString + String.format("%.2f", vehiculeLoues[i].calculerRabais()) + ";";
+                factureString = factureString + String.format("%.2f", vehiculeLoues[i].getVehicule().getPrixAssuranceJour()) + ";";
+                factureString = factureString + String.format("%.2f", (vehiculeLoues[i].getVehicule().getPrixLocationJour() * vehiculeLoues[i].getNbrVehiculeLoue() * vehiculeLoues[i].getNbrJourLocation())) + ";"; //montant Location
+                factureString = factureString + String.format("%.2f", (vehiculeLoues[i].getVehicule().getPrixAssuranceJour() * vehiculeLoues[i].getNbrVehiculeLoue() * vehiculeLoues[i].getNbrJourLocation())) + ";"; //montant Assurance
+
+                /* On vérifie s'il reste d'autres locations à la prochaine boucle, si c'est le cas on prépare la chaîne
+                / en ajoutant des champs vides */
+                if (nbVehicules > 1 && vehiculeLoues[i + 1] != null) {
+                    factureString = factureString + ";;;" + "\n" + ";;;;;;;;";
+                }
+            }
+        }
+        // On rajoute les champs des montants à la fin de la chaîne une fois qu'on a parcouru tous les véhicules loués
+        factureString = factureString + String.format("%.2f", getSousTotal()) + ";";
+        factureString = factureString + String.format("%.2f", getMontantTPS()) + ";";
+        factureString = factureString + String.format("%.2f", getMontantTVQ()) + ";";
+        factureString = factureString + String.format("%.2f", getMontantTotal()) + ";";
+
+        return factureString;
     }
 }
 
