@@ -225,6 +225,7 @@ public class Facture {
 
         System.out.println(BORDURE);
         System.out.println(MSG_FIN);
+        System.out.println();
     }
 
     /**
