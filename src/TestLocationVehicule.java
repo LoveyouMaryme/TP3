@@ -3,8 +3,8 @@ public class TestLocationVehicule {
 
         LocationVehicule testUn = new LocationVehicule();
 
-        System.out.println(testUn.obtenirNombreVehiculeLoue());
-        System.out.println(testUn.obtenirPlaceVehiculeLoue('H', 'E'));
+        System.out.println(testUn.obtenirNbVehicules());
+        System.out.println(testUn.obtenirPosition('H', 'E'));
 
 
     }

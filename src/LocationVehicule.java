@@ -28,7 +28,7 @@ public class LocationVehicule {
      *
      * @return The total count of non-null entries in the array of rented vehicles.
      */
-    public int obtenirNombreVehiculeLoue() {
+    public int obtenirNbVehicules() {
 
         int nbrVehiculesLoues = 0;
 
@@ -52,7 +52,7 @@ public class LocationVehicule {
         int placeLibre;
         boolean vehiculeEstajoute = true;
 
-        placeLibre = obtenirNombreVehiculeLoue();
+        placeLibre = obtenirNbVehicules();
 
         if (placeLibre > MAX_NBR_VEHICULE_LOUE) {
             vehiculeEstajoute = false;
@@ -70,7 +70,7 @@ public class LocationVehicule {
      * @param grandeur La grandeur du véhicule recherché.
      * @return L'indice de la place du véhicule loué correspondant ou -1 si aucun véhicule ne correspond.
      */
-    public int obtenirPlaceVehiculeLoue(char type, char grandeur) {
+    public int obtenirPosition(char type, char grandeur) {
 
         int numeroPlaceLoue = -1;
 
