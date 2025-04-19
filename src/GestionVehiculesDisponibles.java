@@ -1,4 +1,6 @@
 import java.io.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * Université du Québec à Montréal (UQAM)
@@ -16,6 +18,25 @@ public class GestionVehiculesDisponibles {
     // Déclaration des constantes
     private static final String FIC_VEHICULES_DISPONIBLES = "InventaireVehicules.csv";
     private static VehiculeDisponible[] lesVehiculesDipsonibles = new VehiculeDisponible[6];
+
+    private static final String NB_VEHICULES_DISPONIBLES = "Nombre de véhicules disponibles dans l'inventaire";
+    private static final String GRANDEUR = "Grandeur";
+    private static final String HYBRIDE = "Hybride";
+    private static final char H = 'H';
+    private static final String ELECTRIQUE = "Électrique";
+    private static final char E = 'E';
+    private static final String PETIT = "Petit";
+    private static final char P = 'P';
+    private static final String INTERMEDIAIRE = "Intermediaire";
+    private static final char I = 'I';
+    private static final String GRAND = "Grand";
+    private static final char G = 'G';
+    private static final String DECORATEUR = "*************************************************";
+    private static final String BORDURE = "-----------------------------------------------------------";
+
+    public static final String NOM_ENTREPRISE = "Roulons des véhicules verts (RVV)";
+    public static final String ADRESSE_ENTREPRISE = "1500 rue Matata, Hakuna, Québec Y0Z 6Y7";
+    public static final String TELEPHONE_ENTREPRISE = "(438) 222-1111";
 
     /**
      * Lire les données des différents véhicules disponibles dans le fichier
@@ -295,9 +316,26 @@ public class GestionVehiculesDisponibles {
      * programme fournis avec l'énoncé du Travail pratique 3."
      */
     public static void afficher() {
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
-        // À COMPLÉTER
+        System.out.println(BORDURE);
+        System.out.println(NOM_ENTREPRISE);
+        System.out.printf("%-30s%s%n", "Adresse :", ADRESSE_ENTREPRISE);
+        System.out.printf("%-30s%s%n", "Téléphone :", TELEPHONE_ENTREPRISE);
+        System.out.printf("%-30s%s%n", "Date et Heure :", now.format(formatter));
+        System.out.println(BORDURE);
+        System.out.println();
 
+        System.out.println(NB_VEHICULES_DISPONIBLES);
+        System.out.println(DECORATEUR);
+        System.out.printf("%-15s%-15s%-15s%n", GRANDEUR, HYBRIDE, ELECTRIQUE);
+        System.out.println(DECORATEUR);
+        System.out.printf("%-17s%-17s%-17s%n", PETIT, obtenirNbVehiculesDisponibles(H, P), obtenirNbVehiculesDisponibles(E, P));
+        System.out.printf("%-17s%-17s%-17s%n", INTERMEDIAIRE, obtenirNbVehiculesDisponibles(H, I), obtenirNbVehiculesDisponibles(E, I));
+        System.out.printf("%-17s%-17s%-17s%n", GRAND, obtenirNbVehiculesDisponibles(H, G), obtenirNbVehiculesDisponibles(E, G));
+        System.out.println();
+        System.out.println(BORDURE);
     }
 
 }
