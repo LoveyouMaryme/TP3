@@ -1,3 +1,6 @@
+import java.sql.SQLOutput;
+import java.time.LocalDateTime;
+
 /**
  * Université du Québec à Montréal (UQAM)
  * INF1120 - 010 - Hiver 2025
@@ -99,7 +102,7 @@ public class StatistiquesVehiculesLoues {
 
                 emplacementVehicule++;
             }
-        }while(!vehiculeTrouve);
+        }while(!vehiculeTrouve &&  emplacementVehicule == lesVehiculesLoues.length -1 );
 
         return nbrVehiculesLoue;
     }
@@ -113,7 +116,30 @@ public class StatistiquesVehiculesLoues {
      */
     public static void afficherNbVehiculesLoues() {
 
-        // À COMPLÉTER
+        LocalDateTime now = LocalDateTime.now();
+        String dateNowFormatee = now.format(Facture.FORMATTER);
+
+        System.out.println("\n" + Facture.BORDURE);
+        System.out.println(Facture.NOM_ENTREPRISE);
+        System.out.println("Adresse :       " + Facture.ADRESSE_ENTREPRISE);
+        System.out.println("Téléphone :     " + Facture.TELEPHONE_ENTREPRISE);
+        System.out.println("Date et Heure : " + dateNowFormatee); //maybe there's something to change here
+        System.out.println("\n" + Facture.BORDURE);
+        System.out.println();
+
+        System.out.println("Nombre de véhicules loués par type et par grandeur");
+        System.out.println("*************************************************");
+        System.out.println("Grandeur          Hybride      Électrique");
+        System.out.println("****************************************");
+
+        System.out.printf("Petit %15d %15d", obtenirNbVehiculesLoues(Vehicule.H, Vehicule.P),  obtenirNbVehiculesLoues(Vehicule.E, Vehicule.P));
+        System.out.printf("\nIntermédiaire %7d %15d", obtenirNbVehiculesLoues(Vehicule.H, Vehicule.I),  obtenirNbVehiculesLoues(Vehicule.E, Vehicule.I));
+        System.out.printf("\nGrand %15d %15d\n\n",  obtenirNbVehiculesLoues(Vehicule.H, Vehicule.G),  obtenirNbVehiculesLoues(Vehicule.E, Vehicule.G));
+        System.out.println(Facture.BORDURE);
+        System.out.println();
+
+
+
 
     }
 

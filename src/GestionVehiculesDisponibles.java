@@ -19,7 +19,7 @@ public class GestionVehiculesDisponibles {
     private static final String FIC_VEHICULES_DISPONIBLES = "InventaireVehicules.csv";
     private static VehiculeDisponible[] lesVehiculesDipsonibles = new VehiculeDisponible[6];
 
-    private static final String NB_VEHICULES_DISPONIBLES = "Nombre de véhicules disponibles dans l'inventaire";
+    private static final String MESS_NB_VEHICULES_DISPONIBLES = "Nombre de véhicules disponibles dans l'inventaire";
     private static final String GRANDEUR = "Grandeur";
     private static final String HYBRIDE = "Hybride";
     private static final char H = 'H';
@@ -86,8 +86,9 @@ public class GestionVehiculesDisponibles {
                     grandeur = line.charAt(2);
                     String prixLocationParJourString = line.substring(4, 9);
                     prixLocationParJour = Float.parseFloat(prixLocationParJourString);
-                    String prixAssuranceParJourString = line.substring(11, 15);
+                    String prixAssuranceParJourString = line.substring(10, 15);
                     prixAssuranceParJour = Float.parseFloat(prixAssuranceParJourString);
+                    System.out.println(prixAssuranceParJour);
 
                     if (line.length() != 17) {
                         String nbrVoitureDisponibleString = line.substring(16, 18);
@@ -169,13 +170,14 @@ public class GestionVehiculesDisponibles {
      * @return le prix de l'assurance du véhicule par jour ou 0 si aucun véhicule trouvé
      */
     public static float obtenirPrixAssuranceVehParJour(char typeVehicule, char grandeurVehicule,
-                                                       boolean assuranceEstZero) {
+                                                       char assuranceEstZero) {
 
+        boolean voitureTrouve = false;
         float prixAssuranceVehParJour = 0.0f;
 
-        if (!assuranceEstZero) {
+        if (assuranceEstZero != ApplicationPrincipale.NON) {
 
-            for (int i = 0; i < lesVehiculesDipsonibles.length; i++) {
+            for (int i = 0; i < lesVehiculesDipsonibles.length && voitureTrouve == false; i++) {
 
                 VehiculeDisponible courantVehiculeDisponible = lesVehiculesDipsonibles[i];
                 Vehicule courantVehicule = courantVehiculeDisponible.getVehiculeDisponible();
@@ -183,10 +185,12 @@ public class GestionVehiculesDisponibles {
                 int nbrVehiculeDisponible = courantVehiculeDisponible.getNbrVehiculeDisponible();
 
                 if (typeVehicule == courantVehicule.getType()
-                        && grandeurVehicule == courantVehicule.getGrandeur()
-                        && nbrVehiculeDisponible > 0) {
+                        && grandeurVehicule == courantVehicule.getGrandeur()) {
+                    if (nbrVehiculeDisponible > 0) {
+                        voitureTrouve = true;
+                        prixAssuranceVehParJour = courantVehicule.getPrixAssuranceJour();
+                    }
 
-                    prixAssuranceVehParJour = courantVehicule.getPrixAssuranceJour();
                 }
 
             }
@@ -251,8 +255,9 @@ public class GestionVehiculesDisponibles {
 
 
         int nbrVehiculesDisponbles = 0;
+        boolean vehiculeTrouve = false;
 
-        for (int i = 0; i < lesVehiculesDipsonibles.length; i++) {
+        for (int i = 0; i < lesVehiculesDipsonibles.length && vehiculeTrouve == false; i++) {
 
             VehiculeDisponible courantVehiculeDisponible = lesVehiculesDipsonibles[i];
             Vehicule courantVehicule = courantVehiculeDisponible.getVehiculeDisponible();
@@ -262,6 +267,7 @@ public class GestionVehiculesDisponibles {
                     && grandeurVehicule == courantVehicule.getGrandeur()) {
 
                 nbrVehiculesDisponbles = courantVehiculeDisponible.getNbrVehiculeDisponible();
+                vehiculeTrouve = true;
 
             }
 
@@ -288,23 +294,33 @@ public class GestionVehiculesDisponibles {
     public static boolean estDisponible(char typeVehicule,
                                         char grandeurVehicule, int nbVehciculesLoues) {
 
+        boolean vehiculeTrouve = false;
         boolean vehiculeEstDisponible = false;
 
-        for (int i = 0; i < lesVehiculesDipsonibles.length; i++) {
+        for (int i = 0; i < lesVehiculesDipsonibles.length && vehiculeTrouve == false; i++) {
 
             VehiculeDisponible courantVehiculeDisponible = lesVehiculesDipsonibles[i];
             Vehicule courantVehicule = courantVehiculeDisponible.getVehiculeDisponible();
 
 
             if (typeVehicule == courantVehicule.getType()
-                    && grandeurVehicule == courantVehicule.getGrandeur()
-                    && nbVehciculesLoues <= courantVehiculeDisponible.getNbrVehiculeDisponible()) {
+                    && grandeurVehicule == courantVehicule.getGrandeur()) {
 
-                vehiculeEstDisponible = true;
+                vehiculeTrouve = true;
 
+                if (nbVehciculesLoues <= courantVehiculeDisponible.getNbrVehiculeDisponible()) {
+                    vehiculeEstDisponible = true;
+                } else {
+                    System.out.println();
+                    System.out.println();
+                    System.out.printf("Le nombre de véhicules à louer (%d) est supérieur au nombre de véhicules disponibles(%d)", nbVehciculesLoues, courantVehiculeDisponible.getNbrVehiculeDisponible());
+                    System.out.println();
+                    System.out.println();
+
+                }
             }
-
         }
+
 
         return vehiculeEstDisponible;
     }
@@ -327,7 +343,8 @@ public class GestionVehiculesDisponibles {
         System.out.println(BORDURE);
         System.out.println();
 
-        System.out.println(NB_VEHICULES_DISPONIBLES);
+        System.out.println(MESS_NB_VEHICULES_DISPONIBLES);
+
         System.out.println(DECORATEUR);
         System.out.printf("%-15s%-15s%-15s%n", GRANDEUR, HYBRIDE, ELECTRIQUE);
         System.out.println(DECORATEUR);
@@ -336,6 +353,7 @@ public class GestionVehiculesDisponibles {
         System.out.printf("%-17s%-17s%-17s%n", GRAND, obtenirNbVehiculesDisponibles(H, G), obtenirNbVehiculesDisponibles(E, G));
         System.out.println();
         System.out.println(BORDURE);
+        System.out.println();
     }
 
 }

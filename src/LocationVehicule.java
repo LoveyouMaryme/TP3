@@ -53,16 +53,17 @@ public class LocationVehicule {
      */
     public boolean ajouterVehicule(VehiculeLoue vehiculeLoue) {
 
-        int placeLibre;
-        boolean vehiculeEstajoute = true;
+        boolean vehiculeEstajoute = false;
 
-        placeLibre = obtenirNombreVehiculeLoue();
 
-        if (placeLibre > MAX_NBR_VEHICULE_LOUE) {
-            vehiculeEstajoute = false;
+        for (int i = 0; i < this.vehiculesLoues.length && !vehiculeEstajoute; i++) {
+
+            if( this.vehiculesLoues[i] == null){
+                this.vehiculesLoues[i] = vehiculeLoue;
+                vehiculeEstajoute = true;
+            }
         }
 
-        this.vehiculesLoues[placeLibre] = vehiculeLoue;
 
         return vehiculeEstajoute;
     }
@@ -76,20 +77,22 @@ public class LocationVehicule {
      */
     public int obtenirPlaceVehiculeLoue(char type, char grandeur) {
 
+        boolean voitureTrouve = false;
         int numeroPlaceLoue = -1;
 
 
-        for (int i = 0; i <= this.vehiculesLoues.length - 1; i++) {
+        for (int i = 0; i <= this.vehiculesLoues.length - 1 && voitureTrouve != true; i++) {
 
             if (this.vehiculesLoues[i] != null) {
 
                 Vehicule currentVehiculeLoue = this.vehiculesLoues[i].getVehicule();
 
                 char typeVehicule = currentVehiculeLoue.getType();
-                char grandeurVehicule = currentVehiculeLoue.getType();
+                char grandeurVehicule = currentVehiculeLoue.getGrandeur();
 
                 if (typeVehicule == type && grandeurVehicule == grandeur) {
                     numeroPlaceLoue = i;
+                    voitureTrouve = true;
                 }
             }
         }
