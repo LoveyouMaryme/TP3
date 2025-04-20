@@ -66,8 +66,6 @@ public class StatistiquesVehiculesLoues {
         } while (!emplacementNonTrouve && prochainEmplacement != 6);
 
 
-        System.out.println("Le nombre de vehicule loue` " + lesVehiculesLoues[prochainEmplacement].getVehicule().getType() + lesVehiculesLoues[prochainEmplacement].getVehicule().getGrandeur() + lesVehiculesLoues[prochainEmplacement].getNbrVehiculeLoue());
-
     }
 
     /**
