@@ -23,6 +23,10 @@ public class LocationVehicule {
         return vehiculesLoues;
     }
 
+    public void setLocataire(Locataire locataire) {
+        this.locataire = locataire;
+    }
+
     /**
      * Computes the total number of rented vehicles currently in the system.
      *
