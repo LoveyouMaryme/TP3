@@ -88,7 +88,6 @@ public class GestionVehiculesDisponibles {
                     prixLocationParJour = Float.parseFloat(prixLocationParJourString);
                     String prixAssuranceParJourString = line.substring(10, 15);
                     prixAssuranceParJour = Float.parseFloat(prixAssuranceParJourString);
-                    System.out.println(prixAssuranceParJour);
 
                     if (line.length() != 17) {
                         String nbrVoitureDisponibleString = line.substring(16, 18);
@@ -137,14 +136,14 @@ public class GestionVehiculesDisponibles {
 
         for (int i = 0; i < lesVehiculesDipsonibles.length; i++) {
 
-            // C'est la même chose ici que la
+
             VehiculeDisponible courantVehiculeDisponible = lesVehiculesDipsonibles[i];
             Vehicule courantVehicule = courantVehiculeDisponible.getVehiculeDisponible();
             int nbrVehiculeDisponible = courantVehiculeDisponible.getNbrVehiculeDisponible();
 
             if (typeVehicule == courantVehicule.getType()
                     && grandeurVehicule == courantVehicule.getGrandeur()
-                    && nbrVehiculeDisponible > 0) {
+                    && nbrVehiculeDisponible >= 0) {
 
                 prixLocationVehParJour = courantVehicule.getPrixLocationJour();
             }
@@ -311,7 +310,6 @@ public class GestionVehiculesDisponibles {
                 if (nbVehciculesLoues <= courantVehiculeDisponible.getNbrVehiculeDisponible()) {
                     vehiculeEstDisponible = true;
                 } else {
-                    System.out.println();
                     System.out.println();
                     System.out.printf("Le nombre de véhicules à louer (%d) est supérieur au nombre de véhicules disponibles(%d)", nbVehciculesLoues, courantVehiculeDisponible.getNbrVehiculeDisponible());
                     System.out.println();

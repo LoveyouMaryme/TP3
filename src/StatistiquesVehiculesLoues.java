@@ -70,11 +70,6 @@ public class StatistiquesVehiculesLoues {
 
         } while (!emplacementNonTrouve && prochainEmplacement != 6);
 
-        System.out.println("DEBUG - État du tableau des véhicules loués :");
-        for (int i = 0; i < lesVehiculesLoues.length; i++) {
-            System.out.println("[" + i + "] = " + lesVehiculesLoues[i]);
-        }
-
     }
 
     /**

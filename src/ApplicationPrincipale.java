@@ -26,22 +26,27 @@ public class ApplicationPrincipale {
     //  - LES VALEURS ENTIÈRES POUR VALIDER LA SAISIE DU NOMBRE DE JOURS DE LOCATION ET DU NOMBRE DE VÉHICULES À LOUER.
 
 
-    public static final int MAX_CHAR_NOM_PRENOM = 30;
-    public static final int MIN_CHAR_NOM_PRENOM = 2;
+    // Il nous manque du nombre de véhicule à louer, validation pour nom et prenom
+
+
     public static final String FORMAT_TELEPHONE = "\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}";
-    public static final String FORMAT_PERMIS = "[A-Za-z]{1}[0-9]{4}-[0-9]{6}-[0-9]{2}";
     public static final int MAXJOURSLOCATION = 30;
     public static final int MINJOURSLOCATION = 0;
-
-
-    public static final String ENCADRE_TITRE = "---------------------------------------------------------------------------------";
-    public static final String MESSAGE_BIENVENUE = "Bienvenue dans le système de facturation de Roulons des véhicules verts (RVV)";
-    public static final String MESSAGE_MENU_CHOIX = "*** Menu de choix ***";
     public static final String CHOIX_UN = "1. Facturer la location d'un véhicule";
     public static final String CHOIX_DEUX = "2. Afficher le nombre de véhicules hybrides et électriques loués";
     public static final String CHOIX_TROIS = "3. Afficher l'inventaire des véhicules";
     public static final String CHOIX_QUATRE = "4. Afficher toutes les factures";
     public static final String CHOIX_CINQ = "5. Quitter le programme";
+
+
+    // Ceux qu'on a rajouté : should we not??
+
+    public static final String FORMAT_PERMIS = "[A-Za-z]{1}[0-9]{4}-[0-9]{6}-[0-9]{2}";
+    public static final String ENCADRE_TITRE = "---------------------------------------------------------------------------------";
+    public static final String MESSAGE_BIENVENUE = "Bienvenue dans le système de facturation de Roulons des véhicules verts (RVV)";
+    public static final String MESSAGE_MENU_CHOIX = "*** Menu de choix ***";
+
+
 
     public static final String MESSAGE_NOMBRE_VEHICULE_INVENTAIRE = "Nombre de véhicules disponibles dans l'inventaire";
     public static final String MESSAGE_NOMBRE_VEHICULE_LOUEE = "Nombre de véhicules loués par type et par grandeur";
@@ -129,6 +134,7 @@ public class ApplicationPrincipale {
 
         } while (choixUtilisateur < 1 | choixUtilisateur > 5);
 
+        System.out.println();
         return choixUtilisateur;
     }
 
@@ -294,7 +300,6 @@ public class ApplicationPrincipale {
         boolean estTypeValide = false;
 
         do {
-            System.out.println();
             System.out.println("Entrez le type du véhicule à louer");
             System.out.print("(H ou h pour Hybride, et E ou e pour Électrique) : ");
             choixType = Character.toUpperCase(Clavier.lireCharLn());
@@ -376,7 +381,6 @@ public class ApplicationPrincipale {
                 estNbrJourValide = true;
             }
 
-            System.out.println();
 
         } while (!estNbrJourValide);
 
@@ -552,6 +556,7 @@ public class ApplicationPrincipale {
             if (choixAjouter == OUI || choixAjouter == NON) {
                 estValide = true;
             } else {
+                System.out.println();
                 System.out.println("La réponse est invalide!");
             }
 
@@ -631,7 +636,6 @@ public class ApplicationPrincipale {
 
 
                         if (locationVehicule.obtenirPlaceVehiculeLoue(typeVehicule, grandeurVehicule) != -1) {
-                            System.out.println();
                             System.out.print("Vous avez déjà loué un ou des véhicules de ce type et de cette grandeur...");
                             System.out.println();
                             System.out.println();
@@ -819,7 +823,7 @@ public class ApplicationPrincipale {
                     ListeDesFactures.ecrireFacture();
 
                     // APPELEZ LE MESSAGE DE REMERCIEMENT
-                    System.out.println("\n\n  Merci et à la prochaine ! ");
+                    System.out.println("\n\n" + "Merci et à la prochaine ! ");
 
                     sortie = true;
 
