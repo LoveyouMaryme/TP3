@@ -1,7 +1,7 @@
 /**
- * The LocationVehicule class represents a vehicle rental system. It manages
- * rented vehicles, provides functionality for adding vehicles to the rental
- * system, and allows querying the details of rented vehicles.
+ * La classe {@code LocationVehicule} représente un système de location de véhicules. Elle gère
+ * les véhicules loués, permet d'ajouter des véhicules au système de location et de récupérer
+ * des informations sur les véhicules loués.
  */
 public class LocationVehicule {
 
@@ -28,9 +28,9 @@ public class LocationVehicule {
     }
 
     /**
-     * Computes the total number of rented vehicles currently in the system.
+     * Calcule et retourne le nombre total de véhicules loués jusqu'à présent.
      *
-     * @return The total count of non-null entries in the array of rented vehicles.
+     * @return le nombre total de véhicules loués
      */
     public int obtenirNombreVehiculeLoue() {
 
@@ -46,10 +46,11 @@ public class LocationVehicule {
     }
 
     /**
-     * Adds a rented vehicle to the rental system if space is available and updates the list of rented vehicles.
+     * Ajoute un véhicule loué dans le système de location s'il y a une place libre et met à jour
+     * le tableau des véhicules loués.
      *
-     * @param vehiculeLoue The rented vehicle to be added to the system.
-     * @return true if the vehicle is successfully added, false if there is no available space.
+     * @param vehiculeLoue Le véhicule loué à ajouter au système
+     * @return {@code true} si le véhicule a été ajouté avec succès, {@code false} s'il n'y a plus de place.
      */
     public boolean ajouterVehicule(VehiculeLoue vehiculeLoue) {
 

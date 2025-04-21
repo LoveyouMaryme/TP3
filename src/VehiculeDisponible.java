@@ -12,10 +12,6 @@ public class VehiculeDisponible {
         return vehiculeDisponible;
     }
 
-    public void setVehiculeDisponible(Vehicule vehiculeDisponible) {
-        this.vehiculeDisponible = vehiculeDisponible;
-    }
-
     public int getNbrVehiculeDisponible() {
         return nbrVehiculeDisponible;
     }
