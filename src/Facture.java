@@ -205,7 +205,7 @@ public class Facture {
                 System.out.printf("%-35s%s%n", "Date de retour ", vehicule.calculerDateRetour().format(FORMATTER));
                 System.out.printf("%-35s%.2f%s%n", "Prix de la location par jour ", vehicule.getVehicule().getPrixLocationJour(), SYMBOL_DEVISE);
                 System.out.printf("%-35s%.2f%s%n", "Prix de l'assurance par jour ", vehicule.getVehicule().getPrixAssuranceJour(), SYMBOL_DEVISE);
-                System.out.printf("%-35s%.2f%s%n", "Montant de la location ", vehicule.getVehicule().getPrixLocationJour() * vehicule.getNbrVehiculeLoue() * vehicule.getNbrJourLocation(), SYMBOL_DEVISE);
+                System.out.printf("%-35s%.2f%s%n", "Montant de la location ", (vehicule.getVehicule().getPrixLocationJour() - vehicule.calculerRabais()) * vehicule.getNbrVehiculeLoue() * vehicule.getNbrJourLocation(), SYMBOL_DEVISE);
                 System.out.printf("%-35s%.2f%s%n", "Montant de l'assurance ", vehicule.getVehicule().getPrixAssuranceJour() * vehicule.getNbrVehiculeLoue() * vehicule.getNbrJourLocation(), SYMBOL_DEVISE);
 
                 if (vehicule.getNbrJourLocation() > 15) {
