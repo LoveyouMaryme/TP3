@@ -1,6 +1,8 @@
+import java.text.DateFormat;
 import java.time.LocalDateTime;
+import java.util.Formatter;
 
-/*
+/**
  * Université du Québec à Montréal (UQAM)
  * INF1120 - 010 - Hiver 2025
  * Travail pratique 3
@@ -142,8 +144,27 @@ public class ApplicationPrincipale {
      * Affiche l'en-tête contenant les informations de l'entreprise,
      * incluant le nom, l'adresse, le téléphone et la date/heure actuelle.
      */
-    private static void afficherEnteteEntreprise() {
+    public static void afficherEnteteEntreprise() {
+        afficherEnteteEntreprise(-1);
+    }
 
+    /**
+     * Affiche l'en-tête contenant les informations de l'entreprise,
+     * incluant optionnellement le numéro de facture.
+     *
+     * @param noFacture le numéro de la facture à afficher. Si inférieur ou égal à 0, il ne sera pas affiché.
+     */
+    public static void afficherEnteteEntreprise(int noFacture) {
+
+        System.out.println(ENCADRE_TITRE);
+        System.out.println(Facture.NOM_ENTREPRISE);
+        System.out.printf("%-35s%s%n", "Adresse : ", Facture.ADRESSE_ENTREPRISE);
+        System.out.printf("%-35s%s%n", "Téléphone : ", Facture.TELEPHONE_ENTREPRISE);
+        System.out.printf("%-35s%s%n", "Date et Heure : ", DateFormat.getDateInstance().format(Facture.FORMATTER));
+        if (noFacture > 0){
+            System.out.printf("%-35s%s%n", "Facture No : ", noFacture);
+        }
+        System.out.println(ENCADRE_TITRE);
 
     }
 
@@ -565,6 +586,10 @@ public class ApplicationPrincipale {
         return choixAjouter;
     }
 
+    /**
+     * Pause le déroulement du programme et attend que l'utilisateur presse la touche Entrée
+     * avant de continuer et réafficher le menu.
+     */
     public static void Pause() {
         System.out.println();
         System.out.println(MESSAGE_REAFFICHER_MENU);
@@ -591,14 +616,10 @@ public class ApplicationPrincipale {
         LocalDateTime dateFacture;
         Facture facture;
 
-        // AJOUTEZ LES VARIABLES LOCALES MANQUANTES
-        // *** À COMPLÉTER
         boolean nbEstDisponible;
 
-        // Lire les données des véhicules disponibles dans l'inventaire
         GestionVehiculesDisponibles.lireFichierVehiculesDisponibles();
 
-        // APPELEZ LA MÉTHODE QUI AFFICHE LE MESSAGE DE BIENVENUE
         afficherMessageBievenue();
 
         /***************************************************
@@ -607,44 +628,35 @@ public class ApplicationPrincipale {
 
         sortie = false;
 
+        // Boucle principale qui s'exécute tant que le locataire n'a pas choisi l'option 4 pour quitter
         do {
             afficherOptionsMenu();
-            // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE L'OPTION CHOISIE PAR L'UTILISATEUR.
             choixMenu = lireChoixMenu();
 
             switch (choixMenu) {
-
+                // Option 1. Facturer la location d'un véhicule
                 case 1:
 
-                    // CRÉEZ UN OBJET DE TYPE LocationVehicule AVEC LE CONSTRUCTEUR SANS PARAMÈTRE
-                    // *** À COMPLÉTER
                     locationVehicule = new LocationVehicule();
 
-                    // CRÉEZ LA DATE DE LA FACTURE
-                    // *** À COMPLÉTER
                     dateFacture = LocalDateTime.now();
 
-                    // Saisir les données
+                    // On ajoute des véhicules à la transaction tant que le locataire souhaite continuer
                     do {
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE TYPE DU VÉHICULE.
                         typeVehicule = lireTypeVehicule();
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LA GRANDEUR DU VÉHICULE.
                         grandeurVehicule = saisiGrandeurVehicule();
 
 
-
+                        //On vérifie que le locataire n'a pas déjà loué un véhicule du même type/grandeur dans la même transaction
                         if (locationVehicule.obtenirPlaceVehiculeLoue(typeVehicule, grandeurVehicule) != -1) {
                             System.out.print("Vous avez déjà loué un ou des véhicules de ce type et de cette grandeur...");
                             System.out.println();
                             System.out.println();
 
                         } else {
-
-                            // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NOMBRE DE VÉHICULES À LOUER.
-
-
+                            //on vérifie et valide qu'il y a assez de véhicules disponibles pour le locataire
                             do {
                                 nbVehiculesALouer = lireNombreVehiculesLoues();
                                 nbEstDisponible = GestionVehiculesDisponibles.estDisponible(typeVehicule, grandeurVehicule, nbVehiculesALouer);
@@ -652,181 +664,121 @@ public class ApplicationPrincipale {
 
                             } while (!nbEstDisponible);
 
-
+                            // Si le locataire choisi 0, on annule la location pour ce type/grandeur de véhicule
                             if (nbVehiculesALouer == 0) {
                                 System.out.printf(MSG_ANNULATION, typeVehicule, grandeurVehicule);
                                 System.out.println();
 
+                                //Si le locataire a donné au moins 1 véhicule de type/grandeur valide
                             } else {
 
-                                // APPELEZ LA MÉTHODE diminuerNbVehiculesDisponibles DE LA CLASSE GestionVehiculesDisponibles
-                                // POUR DIMINUER LE NOMBRE DE VÉHICULES À LOUER DE CE TYPE ET DE CETTE GRANDEUR DANS L'INVENTAIRE
                                 GestionVehiculesDisponibles.diminuerNbVehiculesDisponibles(typeVehicule, grandeurVehicule, nbVehiculesALouer);
 
-                                // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NOMBRE DE JOURS DE LOCATION.
                                 nbJoursLocation = lireNombreJourLocation();
 
-
-                                // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LA RÉPONSE DE LA QUESTION
-                                // SI L'UTILISATEUR DÉSIRE PRENDRE UNE ASSURANCE.
                                 choixAssurance = lireChoixAssurance();
 
-                                // APPELEZ LA MÉTHODE obtenirPrixLocationVehParJour DE LA CLASSE GestionVehiculesDisponibles
-                                // POUR OBTENIR LE PRIX DE LA LOCATION PAR JOUR POUR CE TYPE ET DE CETTE GRANDEUR DE VÉHICULE.
                                 float prixLocationParJour = GestionVehiculesDisponibles.obtenirPrixLocationVehParJour(typeVehicule, grandeurVehicule);
 
-                                // APPELEZ LA MÉTHODE obtenirPrixAssuranceVehParJour DE LA CLASSE GestionVehiculesDisponibles
-                                // POUR OBTENIR LE PRIX DE L'ASSURANCE PAR JOUR POUR CE TYPE ET DE CETTE GRANDEUR DE VÉHICULE.
                                 float prixAssuranceParJour = GestionVehiculesDisponibles.obtenirPrixAssuranceVehParJour(typeVehicule, grandeurVehicule, choixAssurance);
 
 
-                                // CRÉEZ UN OBJET DE TYPE vehicule AVEC LES PARAMÈTRES SUIVANTS :
-                                // LE TYPE DE VÉHICULE, LA GRANDEUR DU VÉHICULE, LE PRIX DE LA LOCATION PAR JOUR,
-                                // LE PRIX DE L'ASSURANCE PAR JOUR.
                                 Vehicule vehicule = new Vehicule(typeVehicule, grandeurVehicule, prixLocationParJour, prixAssuranceParJour);
 
-                                // CRÉEZ UN OBJET DE TYPE vehiculeLoue AVEC LES PARAMÈTRES SUIVANTS :
-                                // LE VÉHICULE, LA DATE DE LA FACTURE + 3 HEURES, LE NOMBRE DE VÉHICULES À LOUER,
-                                // LE NOMBRE DE JOURS DE LOCATION,
                                 vehiculeLoue = new VehiculeLoue(vehicule, dateFacture.plusHours(3), nbVehiculesALouer, nbJoursLocation);
 
-                                // APPELEZ LA MÉTHODE ajouterVehiculeLoue DE L'OBJET locationVehicule
-                                // POUR AJOUTER LE VÉHICULE LOUÉ DANS LE TABLEAU DES VÉHICULES LOUÉS
                                 locationVehicule.ajouterVehicule(vehiculeLoue);
 
-                                // APPELEZ LA MÉTHODE augmenterNbVehiculesLoues DE LA CLASSE StatistiquesVehiculesLoues
-                                // POUR METTRE À JOUR LE NOMBRE DE VÉHICULES LOUÉS DE CE TYPE ET DE CETTE GRANDEUR DE VÉHICULE.
                                 StatistiquesVehiculesLoues.augmenterNbVehiculesLoues(vehiculeLoue);
                             }
                         }
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LA RÉPONSE DE LA QUESTION
-                        // SI LE LOCATAIRE DÉSIRE LOUER D'AUTRES VÉHICULES.
                         reponse = lireChoixAjouterVehicule();
 
-                        // TANT QUE LE LOCATAIRE DÉSIRE LOUER D'AUTRES VÉHICULES
-                        // *** À COMPLETER LA BOUCLE WHILE CI-DESSOUS
                     } while (reponse == OUI);
 
+                    //Si au moins 1 véhicule a été loué (ajouté au tableau), on prend les renseignements du locataire et crée une facture
                     if (locationVehicule.obtenirNombreVehiculeLoue() > 0) {
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE PRÉNOM DU LOCATAIRE.
                         String prenom = lirePrenomUtilisateur();
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NOM DU LOCATAIRE.
                         String nom = lireNomLocataire();
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NUMÉRO DE TÉLÉPHONE DU LOCATAIRE.
                         String telephone = lireTelephone();
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NUMÉRO DE PERMIS DE CONDUIRE DU LOCATAIRE.
-                        // *** À COMPLÉTER
                         String permis = lirePermisConduire();
 
-                        // CRÉEZ UN OBJET DE TYPE Locataire AVEC LES PARAMÈTRES SUIVANTS :
-                        // LE NOM, LE PRÉNOM, LE NUMÉRO DE TÉLÉPHONE ET LE NUMÉRO DE PERMIS DE CONDUIRE.
                         locataire = new Locataire(nom, prenom, telephone, permis);
 
-                        // APPELEZ LA MÉTHODE setLocataire DE L'OBJET locationVehicule
-                        // AVEC LE PARAMÈTRE LOCATAIRE POUR modifier le locataire
                         locationVehicule.setLocataire(locataire);
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE MODE DE PAIEMENT.
                         char modePaiement = lireModePaiement();
 
-                        // CRÉEZ UN OBJET DE TYPE Facture AVEC LES PARAMÈTRES SUIVANTS :
-                        // LA DATE DE LA FACTURE, LOCATIONVEHICULE ET LE MODE DE PAIEMENT.
                         facture = new Facture(dateFacture, locationVehicule, modePaiement);
 
                         // SI LE MODE DE PAIEMENT EST CRÉDIT
                         if (modePaiement == Facture.C) {
 
-                            // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE TYPE DE LA CARTE DE CRÉDIT.
                             char typeCarteCredit = lireCarteCredit();
 
-                            // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NUMÉRO DE LA CARTE DE CRÉDIT.
                             String numeroCarteCredit = saisiNumeroCarteCredit();
 
-                            // APPELEZ LA MÉTHODE setTypeCarteCredit DE L'OBJET facture
-                            // POUR MODIFIER LE TYPE DE LA CARTE DE CRÉDIT.
                             facture.setTypeCredit(typeCarteCredit);
 
-                            // APPELEZ LA MÉTHODE setNumeroCarteCredit DE L'OBJET facture
-                            // POUR MODIFIER LE NUMÉRO DE LA CARTE DE CRÉDIT.
                             facture.setNoCredit(numeroCarteCredit);
                         }
 
-                        // APPELEZ LES MÉTHODES DE L'OBJET facture DANS L'ORDRE SUIVANT :
-                        //    - Calcul du sous-total de la facture
-                        //    - Calcul du montant TPS
-                        //    - Calcul du montant TVQ
-                        //    - Calcul du montant total de la facture
-                        //    - Afficher la facture
+                        // On fait les calculs de montant sur la facture
                         facture.calculerSousTotal();
                         facture.calculerMontantTPS();
                         facture.calculerMontantTVQ();
                         facture.calculerMontantTotal();
                         facture.afficherFacture();
 
-                        // APPELEZ LA MÉTHODE ajouterFacture DE LA CLASSE ListeDesFactures
-                        // POUR AJOUTER LA FACTURE COURANTE (l'objet facture) DANS LE TABLEAU
-                        // DES FACTURES.
+                        //La facture est complétée.
                         ListeDesFactures.ajouterFacture(facture);
                     }
 
-                    // VOUS DEVEZ APPELER LA MÉTHODE DE PAUSE AVANT
-                    // D'AFFICHER LE MENU PRINCIPAL.
-                    // *** À COMPLÉTER
                     Pause();
 
                     break;
 
+                    //Option 2. Afficher le nombre de véhicules hybrides et électriques loués
                 case 2:
-                    // APPELEZ LA MÉTHODE afficherNbVehiculesLoues DE LA CLASSE StatistiquesVehiculesLoues
-                    // POUR AFFICHER LE NOMBRE DE VÉHICULES LOUÉS PAR TYPE ET GRANDEUR DE VÉHICULE
+                    // Affiche un tableau contenant tous les véhicules loués jusqu'à présent
                     StatistiquesVehiculesLoues.afficherNbVehiculesLoues();
 
-                    // VOUS DEVEZ APPELER LA MÉTHODE DE PAUSE AVANT
                     Pause();
-
 
                     break;
 
+                    //Option 3. Afficher l'inventaire des véhicules disponibles
                 case 3:
-                    // APPELEZ LA MÉTHODE afficher DE LA CLASSE GestionVehiculesDisponibles
-                    // POUR AFFICHER LA LISTE DES VÉHICULES DISPONIBLES
+                    // Affiche un tableau contenant tous les véhicules disponibles
                     GestionVehiculesDisponibles.afficher();
 
-                    // VOUS DEVEZ APPELER LA MÉTHODE DE PAUSE AVANT
-                    // D'AFFICHER LE MENU PRINCIPAL.
                     Pause();
 
                     break;
 
+                    //Option 4. Afficher toutes les factures
                 case 4:
-
-                    // APPELEZ LA MÉTHODE afficher DE LA CLASSE ListeDesFactures
-                    // POUR AFFICHER TOUTES LES FACTURES CRÉÉES
+                    // Déroule la liste de toutes les factures calculées jusqu'à présent
                     ListeDesFactures.afficher();
 
-                    // VOUS DEVEZ APPELER LA MÉTHODE DE PAUSE AVANT
-                    // D'AFFICHER LE MENU PRINCIPAL.
                     Pause();
 
                     break;
 
+                    //Option 5. Quitter le programme
+                    //Sauvegarde les factures dans un fichier Facture.csv puis ferme le programme
                 case 5:
 
-
-                    // APPELEZ LA MÉTHODE ecrireFacture DE LA CLASSE ListeDesFactures
-                    // POUR ÉCRIRE LES DONNÉES DE TOUTES LES FACTURES DANS LE FICHIER Factures.csv.
                     ListeDesFactures.ecrireFacture();
 
-                    // APPELEZ LE MESSAGE DE REMERCIEMENT
                     System.out.println("\n\n" + "Merci et à la prochaine ! ");
 
                     sortie = true;
-
             }
 
         } while (!sortie);
