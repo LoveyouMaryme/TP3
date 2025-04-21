@@ -95,9 +95,9 @@ public class Facture {
     public String obtenirDescriptionModePaiement() {
         String modePaiement = null;
 
-        if (this.modePaiement == D) {
+        if (this.getModePaiement() == D) {
             modePaiement = DEBIT;
-        } else if (this.modePaiement == C) {
+        } else if (this.getModePaiement() == C) {
             modePaiement = CREDIT;
         }
 
@@ -112,9 +112,9 @@ public class Facture {
     public String obtenirDescriptionCarteCredit() {
         String carteCredit = null;
 
-        if (this.typeCredit == V) {
+        if (this.getTypeCredit() == V) {
             carteCredit = VISA;
-        } else if (this.typeCredit == M) {
+        } else if (this.getTypeCredit() == M) {
             carteCredit = MASTERCARD;
         }
 
@@ -126,7 +126,7 @@ public class Facture {
      */
     public void calculerSousTotal() {
         float sousTotalFinal = 0;
-        VehiculeLoue[] vehiculeLoues = locationVehicule.getVehiculesLoues();
+        VehiculeLoue[] vehiculeLoues = getLocationVehicule().getVehiculesLoues();
 
 
         for (VehiculeLoue vehicule : vehiculeLoues) {
@@ -174,21 +174,15 @@ public class Facture {
      */
     public void afficherFacture() {
 
-        VehiculeLoue[] vehiculeLoues = locationVehicule.getVehiculesLoues();
+        VehiculeLoue[] vehiculeLoues = getLocationVehicule().getVehiculesLoues();
 
-        System.out.println(BORDURE);
-        System.out.println(NOM_ENTREPRISE);
-        System.out.printf("%-35s%s%n", "Adresse ", ADRESSE_ENTREPRISE);
-        System.out.printf("%-35s%s%n", "Téléphone ", TELEPHONE_ENTREPRISE);
-        System.out.printf("%-35s%s%n", "Date et Heure ", getDateFacture().format(FORMATTER));
-        System.out.printf("%-35s%s%n", "Facture No ", noFacture);
-        System.out.println(BORDURE);
+        ApplicationPrincipale.afficherEnteteEntreprise(noFacture);
 
         System.out.println();
 
-        System.out.printf("%-35s%s%s%n", "Prénom et nom", locationVehicule.getLocataire().getPrenom(), locationVehicule.getLocataire().getNom());
-        System.out.printf("%-35s%s%n", "Téléphone", locationVehicule.getLocataire().getNumeroTelephone());
-        System.out.printf("%-35s%s%n", "Permis de conduire", locationVehicule.getLocataire().getNumeroPermisConduire());
+        System.out.printf("%-35s%s %s%n", "Prénom et nom", getLocationVehicule().getLocataire().getPrenom(), getLocationVehicule().getLocataire().getNom());
+        System.out.printf("%-35s%s%n", "Téléphone", getLocationVehicule().getLocataire().getNumeroTelephone());
+        System.out.printf("%-35s%s%n", "Permis de conduire", getLocationVehicule().getLocataire().getNumeroPermisConduire());
 
         System.out.println();
 
@@ -241,16 +235,16 @@ public class Facture {
 
         String factureString = "";
 
-        factureString += noFacture + ";" + dateFacture.format(FORMATTER) + ";" + locationVehicule.getLocataire().getPrenom() + " "
-                + locationVehicule.getLocataire().getNom() + ";" + locationVehicule.getLocataire().getNumeroTelephone()
-                + ";" + locationVehicule.getLocataire().getNumeroPermisConduire() + ";" + obtenirDescriptionModePaiement() + ";"
+        factureString += noFacture + ";" + getDateFacture().format(FORMATTER) + ";" + getLocationVehicule().getLocataire().getPrenom() + " "
+                + getLocationVehicule().getLocataire().getNom() + ";" + getLocationVehicule().getLocataire().getNumeroTelephone()
+                + ";" + getLocationVehicule().getLocataire().getNumeroPermisConduire() + ";" + obtenirDescriptionModePaiement() + ";"
                 + obtenirDescriptionCarteCredit() + ";" + getNoCredit() + ";";
 
-        VehiculeLoue[] vehiculeLoues = locationVehicule.getVehiculesLoues();
+        VehiculeLoue[] vehiculeLoues = getLocationVehicule().getVehiculesLoues();
 
         for (int i = 0; i < vehiculeLoues.length; i++) {
             if (vehiculeLoues[i] != null) {
-                int nbVehicules = locationVehicule.getVehiculesLoues().length;
+                int nbVehicules = getLocationVehicule().getVehiculesLoues().length;
 
                 factureString = factureString + vehiculeLoues[i].getVehicule().obtenirDescriptionVehicule() + ";";
                 factureString = factureString + vehiculeLoues[i].getVehicule().obtenirGrandeurVehicule() + ";";
