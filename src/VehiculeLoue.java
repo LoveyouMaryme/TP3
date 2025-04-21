@@ -21,16 +21,8 @@ public class VehiculeLoue {
         return vehicule;
     }
 
-    public void setVehicule(Vehicule vehicule) {
-        this.vehicule = vehicule;
-    }
-
     public LocalDateTime getDateLocation() {
         return dateLocation;
-    }
-
-    public void setDateLocation(LocalDateTime dateLocation) {
-        this.dateLocation = dateLocation;
     }
 
     public int getNbrVehiculeLoue() {
@@ -45,10 +37,6 @@ public class VehiculeLoue {
         return nbrJourLocation;
     }
 
-    public void setNbrJourLocation(int nbrJourLocation) {
-        this.nbrJourLocation = nbrJourLocation;
-    }
-
     public LocalDateTime calculerDateRetour(){
 
         LocalDateTime dateRetour;
@@ -56,6 +44,11 @@ public class VehiculeLoue {
         return dateRetour;
     }
 
+    /**
+     * Calcule le montant du rabais applicable sur une location.
+     *
+     * @return Le montant du rabais
+     */
     public float calculerRabais(){
 
         float montantRabais = 0.0F;

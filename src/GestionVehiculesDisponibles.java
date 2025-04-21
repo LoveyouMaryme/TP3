@@ -34,28 +34,9 @@ public class GestionVehiculesDisponibles {
     private static final String DECORATEUR = "*************************************************";
     private static final String BORDURE = "-----------------------------------------------------------";
 
-    public static final String NOM_ENTREPRISE = "Roulons des véhicules verts (RVV)";
-    public static final String ADRESSE_ENTREPRISE = "1500 rue Matata, Hakuna, Québec Y0Z 6Y7";
-    public static final String TELEPHONE_ENTREPRISE = "(438) 222-1111";
-
     /**
      * Lire les données des différents véhicules disponibles dans le fichier
-     * InventaireVehicules.csv. Chaque ligne est composée :
-     * - Type du véhicule
-     * - Grandeur du véhicule
-     * - Prix de la location du véhicule par jour
-     * - Prix de l'assurance du véhicule par jour
-     * - Nombre de véhicules disponibles
-     * <p>
-     * La première ligne dans ce fichier est la description des autres lignes et
-     * elle doit être ignorée lors de la lecture. Les autres lignes de ce fichier
-     * sont composées des données ci-dessus mentionnées séparées entre elles par
-     * des points-virgules. Voir le fichier InventaireVehicules.csv pour plus de
-     * détails.
-     * <p>
-     * Chacune de ces lignes doit être lue et découpée pour créer un objet de type
-     * VehiculeDisponible, et cet objet doit être ajouté dans le tableau des véhicules
-     * disponibles.
+     * InventaireVehicules.csv et les insèrent dans le tableau {@code lesVehiculesDipsonibles}
      */
     public static void lireFichierVehiculesDisponibles() {
 
@@ -120,15 +101,11 @@ public class GestionVehiculesDisponibles {
     }
 
     /**
-     * Obtenir le prix de la location du véhicule par jour. Cette méthode doit trouver
-     * le véhicule dans le tableau des véhicules disponibles (lesVehiculesDipsonibles)
-     * dont le type et la grandeur sont les mêmes que le type et de la grandeur du véhicule
-     * passés en paramètres, ensuite elle doit retourner le prix de la location du véhicule
-     * par jour.
+     * Retourne le prix de location par jour d'un véhicule donné selon son type et sa grandeur.
      *
      * @param typeVehicule     le type du véhicule
      * @param grandeurVehicule la grandeur du véhicule
-     * @return le prix de la location du véhicule par jour ou 0 si aucun véhicule trouvé
+     * @return le prix de la location du véhicule par jour ou 0 si aucun véhicule n'est trouvé
      */
     public static float obtenirPrixLocationVehParJour(char typeVehicule, char grandeurVehicule) {
 
@@ -154,13 +131,8 @@ public class GestionVehiculesDisponibles {
     }
 
     /**
-     * Obtenir le prix de l'assurance du véhicule par jour. Cette méthode doit trouver
-     * le véhicule dans le tableau des véhicules disponibles (lesVehiculesDipsonibles)
-     * dont le type et la grandeur sont les mémes que le type et de la grandeur du véhicule
-     * passés en paramètres, ensuite elle doit retourner le prix de l'assurance du véhicule
-     * par jour. Si le paramètre "AssuranceEstZero" est true, le prix de l'assurance doit être
-     * 0, sinon la méthode retourne le prix de l'assurance trouvé dans le tableau des véhicules
-     * disponibles
+     * Retourne le prix de l'assurance par jour d'un véhicule donné selon son type et sa grandeur seulement si le locataire
+     * a choisi une assurance.
      *
      * @param typeVehicule     le type du véhicule
      * @param grandeurVehicule la grandeur du véhicule
@@ -200,18 +172,13 @@ public class GestionVehiculesDisponibles {
     }
 
     /**
-     * Diminuer le nombre de véhicules disponibles dans le tableau des véhicules disponibles.
-     * <p>
-     * La méthode doit trouver le véhicule dans le tableau des véhicules disponibles dont
-     * le type et la grandeur sont les mêmes que le type et la grandeur passés en paramètres,
-     * ensuite elle fait le nombre de véhicules disponibles moins le nombre de véhicules loués.
-     * <p>
-     * Elle retourne vrai si la diminution a été effectuée avec succès, sinon faux.
+     * Diminue le nombre de véhicules disponibles dans le tableau des véhicules disponibles selon le type,
+     * la grandeur et le nombre de véhicules.
      *
      * @param typeVehicule     le type du véhicule
      * @param grandeurVehicule la grandeur du véhicule
      * @param nbVehiculesLoues le nombre de véhicules loués
-     * @return vrai si la diminution est faite, sinon faux
+     * @return {@code true } si la diminution est faite avec succès, sinon {@code false}
      */
     public static boolean diminuerNbVehiculesDisponibles(char typeVehicule,
                                                          char grandeurVehicule, int nbVehiculesLoues) {
@@ -241,14 +208,11 @@ public class GestionVehiculesDisponibles {
 
 
     /**
-     * Obtenir le nombre de véhicules disponibles. Cette méthode doit trouver le véhicule
-     * dans le tableau des véhicules disponibles (lesVehiculesDipsonibles) dont le type et
-     * la grandeur sont les mêmes que le type et de la grandeur du véhicule passés en
-     * paramètres. Ensuite elle doit retourner le nombre de véhciules disponibles.
+     * Récupère le nombre de véhicules disponibles selon le type et la grandeur donnés.
      *
      * @param typeVehicule     le type du véhicule
      * @param grandeurVehicule la grandeur du véhicule
-     * @return le nombre de véhicules disponibles ou 0 si aucun véhicule trouvé
+     * @return le nombre de véhicules disponibles ou 0 si aucun véhicule n'est trouvé
      */
     public static int obtenirNbVehiculesDisponibles(char typeVehicule, char grandeurVehicule) {
 
@@ -276,19 +240,13 @@ public class GestionVehiculesDisponibles {
     }
 
     /**
-     * Vérifier la disponibilité des véhicules disponibles (lesVehiculesDipsonibles).
-     * <p>
-     * La méthode doit trouver le véhicule dans le tableau des véhicules disponibles
-     * (lesVehiculesDipsonibles) dont le type et la grandeur sont les mêmes que le type
-     * et de la grandeur du véhicule passés en paramètres. Ensuite elle doit retourner
-     * vrai si le nombre de véhicules loués passé en paramètre (nbVehciculesLoues) est
-     * inférieur ou égal au nombre de véhicules disponibles, sinon faux.
+     * Vérifie la disponibilité des véhicules pour un type, une grandeur et un nombre donnés.
      *
      * @param typeVehicule      le type du véhicule
      * @param grandeurVehicule  la grandeur du véhicule
      * @param nbVehciculesLoues le nombre de véhicules dont la disponibilité doit être vérifiée
-     * @return vrai si le nombre de véhicules passé en paramètre est inférieur ou égal au
-     * nombre de véhicules disponibles, sinon faux.
+     * @return {@code true} si le nombre de véhicules passé en paramètre est inférieur ou égal au
+     * nombre de véhicules disponibles, sinon {@code false}.
      */
     public static boolean estDisponible(char typeVehicule,
                                         char grandeurVehicule, int nbVehciculesLoues) {
@@ -325,20 +283,11 @@ public class GestionVehiculesDisponibles {
 
 
     /**
-     * Afficher les différents véhicules disponibles dans le tableau des véhicules disponibles.
-     * Pour plus de détails sur l'affichage, voir les exemples de la trace d'exécution du
-     * programme fournis avec l'énoncé du Travail pratique 3."
+     * Affiche un tableau contenant tous les véhicules disponibles selon leur type et grandeur.
      */
     public static void afficher() {
-        LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
-        System.out.println(BORDURE);
-        System.out.println(NOM_ENTREPRISE);
-        System.out.printf("%-30s%s%n", "Adresse :", ADRESSE_ENTREPRISE);
-        System.out.printf("%-30s%s%n", "Téléphone :", TELEPHONE_ENTREPRISE);
-        System.out.printf("%-30s%s%n", "Date et Heure :", now.format(formatter));
-        System.out.println(BORDURE);
+        ApplicationPrincipale.afficherEnteteEntreprise();
         System.out.println();
 
         System.out.println(MESS_NB_VEHICULES_DISPONIBLES);

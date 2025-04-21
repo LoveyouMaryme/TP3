@@ -19,18 +19,7 @@ public class StatistiquesVehiculesLoues {
 
 
     /**
-     * Augmenter le nombre de véhicules loués par type et par grandeur de véhicule.
-     * <p>
-     * La méthode doit trouver le véhicule loué dans le tableau des véhicules loués
-     * (lesVehiculesLoues) dont le type et la grandeur sont les mêmes que le type
-     * et la grandeur du véhicule loué passé en paramètre, ensuite elle doit ajouter
-     * le nombre de véhicules loués du véhicule loué passé en paramètre au nombre de véhicule
-     * loué dans le tableau des véhicules loués.
-     * <p>
-     * Si aucun véhicule loué n'est trouvé dans le tableau des véhicules loués qui
-     * correspond au véhicule loué passé en paramètre, le véhicule loué passé en
-     * paramètre est ajouté dans le tableau des véhicules loués à la prochaine position
-     * libre.
+     * Ajoute un enregistrement de véhicule loué par type et par grandeur
      *
      * @param vehiculeLoue le véhicule loué
      */
@@ -41,7 +30,6 @@ public class StatistiquesVehiculesLoues {
 
 
         do {
-
 
             VehiculeLoue enregistrementLocation = lesVehiculesLoues[prochainEmplacement];
 
@@ -73,12 +61,7 @@ public class StatistiquesVehiculesLoues {
     }
 
     /**
-     * Obtenir le nombre de véhicules loués.
-     * <p>
-     * La méthode doit trouver le véhicule loués dans le tableau des véhicules loués
-     * (lesVehiculesLoues) dont le type et la grandeur sont les mêmes que le type
-     * et la grandeur passés en paramètres. Ensuite elle doit retourner le nombre de
-     * véhicules disponibles.
+     * Retourne le nombre de véhicules loués selon un type et une grandeur donnés.
      *
      * @param typeVehicule     le type du véhicule loué
      * @param grandeurVehicule la grandeur du véhicule loué
@@ -112,22 +95,12 @@ public class StatistiquesVehiculesLoues {
 
 
     /**
-     * La méthode doit afficher le nombre de véhicules hybrides et électriques
-     * loués par type et par grandeur. Pour plus de détails sur l'affichage,
-     * voir les exemples de la trace d'exécution du programme fournis avec
-     * l'énoncé du Travail pratique 3.
+     * Affiche un tableau contenant tous les véhicules loués jusqu'à présent.
      */
     public static void afficherNbVehiculesLoues() {
 
-        LocalDateTime now = LocalDateTime.now();
-        String dateNowFormatee = now.format(Facture.FORMATTER);
+        ApplicationPrincipale.afficherEnteteEntreprise();
 
-        System.out.println("\n" + Facture.BORDURE);
-        System.out.println(Facture.NOM_ENTREPRISE);
-        System.out.println("Adresse :       " + Facture.ADRESSE_ENTREPRISE);
-        System.out.println("Téléphone :     " + Facture.TELEPHONE_ENTREPRISE);
-        System.out.println("Date et Heure : " + dateNowFormatee); //maybe there's something to change here
-        System.out.println("\n" + Facture.BORDURE);
         System.out.println();
 
         System.out.println("Nombre de véhicules loués par type et par grandeur");
@@ -140,9 +113,6 @@ public class StatistiquesVehiculesLoues {
         System.out.printf("\nGrand %15d %15d\n\n",  obtenirNbVehiculesLoues(Vehicule.H, Vehicule.G),  obtenirNbVehiculesLoues(Vehicule.E, Vehicule.G));
         System.out.println(Facture.BORDURE);
         System.out.println();
-
-
-
 
     }
 
