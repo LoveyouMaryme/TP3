@@ -43,5 +43,7 @@ public class TestStatistiquesVehiculesLoues {
         System.out.println("H-P: " + StatistiquesVehiculesLoues.obtenirNbVehiculesLoues('H', 'P'));
         System.out.println("H-I: " + StatistiquesVehiculesLoues.obtenirNbVehiculesLoues('H', 'I'));
         System.out.println("H-G: " + StatistiquesVehiculesLoues.obtenirNbVehiculesLoues('H', 'G'));
+
+        StatistiquesVehiculesLoues.afficherNbVehiculesLoues();
     }
 }

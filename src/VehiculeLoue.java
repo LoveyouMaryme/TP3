@@ -63,7 +63,6 @@ public class VehiculeLoue {
         if(this.nbrJourLocation > 15 &&
         this.vehicule.getType() == Vehicule.E &&
         ( this.vehicule.getType() == Vehicule.P || this.vehicule.getType() == Vehicule.I)){
-
             montantRabais = this.vehicule.getPrixLocationJour() * TAUX_RABAIS;
         }
 

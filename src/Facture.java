@@ -17,7 +17,7 @@ public class Facture {
     public static final String NOM_ENTREPRISE = "Roulons des véhicules verts (RVV)";
     public static final String ADRESSE_ENTREPRISE = "1500 rue Matata, Hakuna, Québec Y0Z 6Y7";
     public static final String TELEPHONE_ENTREPRISE = "(438) 222-1111";
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+    public static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
     public static final String SYMBOL_DEVISE = "$";
     public static final String BORDURE = "--------------------------------------------------------";
     public static final String MSG_FIN = "Merci pour votre confiance!";
@@ -178,24 +178,24 @@ public class Facture {
 
         System.out.println(BORDURE);
         System.out.println(NOM_ENTREPRISE);
-        System.out.printf("%-30s%s%n", "Adresse ", ADRESSE_ENTREPRISE);
-        System.out.printf("%-30s%s%n", "Téléphone ", TELEPHONE_ENTREPRISE);
-        System.out.printf("%-30s%s%n", "Date et Heure ", getDateFacture().format(formatter));
-        System.out.printf("%-30s%s%n", "Facture No ", noFacture);
+        System.out.printf("%-35s%s%n", "Adresse ", ADRESSE_ENTREPRISE);
+        System.out.printf("%-35s%s%n", "Téléphone ", TELEPHONE_ENTREPRISE);
+        System.out.printf("%-35s%s%n", "Date et Heure ", getDateFacture().format(FORMATTER));
+        System.out.printf("%-35s%s%n", "Facture No ", noFacture);
         System.out.println(BORDURE);
 
         System.out.println();
 
-        System.out.printf("%-30s%s%n", "Prénom et nom", locationVehicule.getLocataire().getPrenom());
-        System.out.printf("%-30s%s%n", "Téléphone", locationVehicule.getLocataire().getNumeroTelephone());
-        System.out.printf("%-30s%s%n", "Permis de conduire", locationVehicule.getLocataire().getNumeroPermisConduire());
+        System.out.printf("%-35s%s%s%n", "Prénom et nom", locationVehicule.getLocataire().getPrenom(), locationVehicule.getLocataire().getNom());
+        System.out.printf("%-35s%s%n", "Téléphone", locationVehicule.getLocataire().getNumeroTelephone());
+        System.out.printf("%-35s%s%n", "Permis de conduire", locationVehicule.getLocataire().getNumeroPermisConduire());
 
         System.out.println();
 
-        System.out.printf("%-30s%s%n", "Mode de paiement", obtenirDescriptionModePaiement());
+        System.out.printf("%-35s%s%n", "Mode de paiement", obtenirDescriptionModePaiement());
         if (this.modePaiement == C) {
-            System.out.printf("%-30s%s%n", "Type de la carte de crédit", obtenirDescriptionCarteCredit());
-            System.out.printf("%-30s%s%n", "Numéro de la carte de crédit ", this.noCredit);
+            System.out.printf("%-35s%s%n", "Type de la carte de crédit", obtenirDescriptionCarteCredit());
+            System.out.printf("%-35s%s%s%n", "Numéro de la carte de crédit", "XXXX XXXX XXXX ", this.noCredit.substring(15, 19));
         }
 
         System.out.println();
@@ -203,25 +203,29 @@ public class Facture {
         for (VehiculeLoue vehicule : vehiculeLoues) {
             if (vehicule != null) {
 
-                System.out.printf("%-30s%s%n", "Type du véhicule ", vehicule.getVehicule().obtenirDescriptionVehicule());
-                System.out.printf("%-30s%s%n", "Grandeur du véhicule ", vehicule.getVehicule().obtenirGrandeurVehicule());
-                System.out.printf("%-30s%s%n", "Nombre de véhicules loués ", vehicule.getNbrVehiculeLoue());
-                System.out.printf("%-30s%s%n", "Nombre de jours de location ", vehicule.getNbrJourLocation());
-                System.out.printf("%-30s%s%n", "Date de location ", vehicule.getDateLocation().format(formatter));
-                System.out.printf("%-30s%s%n", "Date de retour ", vehicule.calculerDateRetour().format(formatter));
-                System.out.printf("%-30s%.2f%s%n", "Prix de la location par jour ", vehicule.getVehicule().getPrixLocationJour(), SYMBOL_DEVISE);
-                System.out.printf("%-30s%.2f%s%n", "Prix de l'assurance par jour ", vehicule.getVehicule().getPrixAssuranceJour(), SYMBOL_DEVISE);
-                System.out.printf("%-30s%.2f%s%n", "Montant de la location ", vehicule.getVehicule().getPrixLocationJour() * vehicule.getNbrVehiculeLoue() * vehicule.getNbrJourLocation(), SYMBOL_DEVISE);
-                System.out.printf("%-30s%.2f%s%n", "Montant de l'assurance ", vehicule.getVehicule().getPrixAssuranceJour() * vehicule.getNbrVehiculeLoue() * vehicule.getNbrJourLocation(), SYMBOL_DEVISE);
+                System.out.printf("%-35s%s%n", "Type du véhicule ", vehicule.getVehicule().obtenirDescriptionVehicule());
+                System.out.printf("%-35s%s%n", "Grandeur du véhicule ", vehicule.getVehicule().obtenirGrandeurVehicule());
+                System.out.printf("%-35s%s%n", "Nombre de véhicules loués ", vehicule.getNbrVehiculeLoue());
+                System.out.printf("%-35s%s%n", "Nombre de jours de location ", vehicule.getNbrJourLocation());
+                System.out.printf("%-35s%s%n", "Date de location ", vehicule.getDateLocation().format(FORMATTER));
+                System.out.printf("%-35s%s%n", "Date de retour ", vehicule.calculerDateRetour().format(FORMATTER));
+                System.out.printf("%-35s%.2f%s%n", "Prix de la location par jour ", vehicule.getVehicule().getPrixLocationJour(), SYMBOL_DEVISE);
+                System.out.printf("%-35s%.2f%s%n", "Prix de l'assurance par jour ", vehicule.getVehicule().getPrixAssuranceJour(), SYMBOL_DEVISE);
+                System.out.printf("%-35s%.2f%s%n", "Montant de la location ", vehicule.getVehicule().getPrixLocationJour() * vehicule.getNbrVehiculeLoue() * vehicule.getNbrJourLocation(), SYMBOL_DEVISE);
+                System.out.printf("%-35s%.2f%s%n", "Montant de l'assurance ", vehicule.getVehicule().getPrixAssuranceJour() * vehicule.getNbrVehiculeLoue() * vehicule.getNbrJourLocation(), SYMBOL_DEVISE);
+
+                if (vehicule.getNbrJourLocation() > 15) {
+                    System.out.printf("%-35s%.2f%s%n", "Rabais sur le prix de location", vehicule.calculerRabais(), SYMBOL_DEVISE);
+                }
 
                 System.out.println();
             }
         }
 
-        System.out.printf("%-30s%.2f%s%n", "Sous-total ", sousTotal, SYMBOL_DEVISE);
-        System.out.printf("%-30s%.2f%s%n", "Montant TPS ", montantTPS, SYMBOL_DEVISE);
-        System.out.printf("%-30s%.2f%s%n", "Montant TVQ ", montantTVQ, SYMBOL_DEVISE);
-        System.out.printf("%-30s%.2f%s%n", "Montant Total ", montantTotal, SYMBOL_DEVISE);
+        System.out.printf("%-35s%.2f%s%n", "Sous-total ", sousTotal, SYMBOL_DEVISE);
+        System.out.printf("%-35s%.2f%s%n", "Montant TPS ", montantTPS, SYMBOL_DEVISE);
+        System.out.printf("%-35s%.2f%s%n", "Montant TVQ ", montantTVQ, SYMBOL_DEVISE);
+        System.out.printf("%-35s%.2f%s%n", "Montant Total ", montantTotal, SYMBOL_DEVISE);
 
         System.out.println(BORDURE);
         System.out.println(MSG_FIN);
@@ -237,7 +241,7 @@ public class Facture {
 
         String factureString = "";
 
-        factureString += noFacture + ";" + dateFacture.format(formatter) + ";" + locationVehicule.getLocataire().getPrenom() + " "
+        factureString += noFacture + ";" + dateFacture.format(FORMATTER) + ";" + locationVehicule.getLocataire().getPrenom() + " "
                 + locationVehicule.getLocataire().getNom() + ";" + locationVehicule.getLocataire().getNumeroTelephone()
                 + ";" + locationVehicule.getLocataire().getNumeroPermisConduire() + ";" + obtenirDescriptionModePaiement() + ";"
                 + obtenirDescriptionCarteCredit() + ";" + getNoCredit() + ";";
@@ -253,8 +257,8 @@ public class Facture {
                 factureString = factureString + vehiculeLoues[i].getNbrVehiculeLoue() + ";";
                 factureString = factureString + vehiculeLoues[i].getNbrJourLocation() + ";";
 
-                factureString = factureString + vehiculeLoues[i].getDateLocation().format(formatter) + ";";
-                factureString = factureString + vehiculeLoues[i].calculerDateRetour().format(formatter) + ";";
+                factureString = factureString + vehiculeLoues[i].getDateLocation().format(FORMATTER) + ";";
+                factureString = factureString + vehiculeLoues[i].calculerDateRetour().format(FORMATTER) + ";";
 
                 factureString = factureString + String.format("%.2f", vehiculeLoues[i].getVehicule().getPrixLocationJour()) + ";";
                 factureString = factureString + String.format("%.2f", vehiculeLoues[i].calculerRabais()) + ";";

@@ -102,13 +102,24 @@ public class ListeDesFactures {
      * programme fournis avec l'énoncé du Travail pratique 3.
      */
     public static void afficher() {
-        for (int i = 0; i < lesFactures.length; i++) {
+
+        boolean listeFactureVide = false;
+
+
+        for (int i = 0; i < lesFactures.length && listeFactureVide != true; i++) {
             if (lesFactures[i] != null) {
+                listeFactureVide = false;
                 lesFactures[i].afficherFacture();
                 if (lesFactures[i + 1] != null) {
                     System.out.println(MSG_CONTINUER);
+                }else{
+                    listeFactureVide = true;
                 }
-                Clavier.lireFinLigne();
+            } else {
+                listeFactureVide = true;
+                System.out.println();
+                System.out.println("Aucune facture à afficher...");
+
             }
         }
     }

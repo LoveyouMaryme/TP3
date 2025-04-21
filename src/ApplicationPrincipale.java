@@ -1,7 +1,4 @@
 import java.time.LocalDateTime;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.time.format.DateTimeFormatter;
 
 /*
  * Université du Québec à Montréal (UQAM)
@@ -20,7 +17,7 @@ import java.time.format.DateTimeFormatter;
 
 public class ApplicationPrincipale {
 
-    public static final String MSG_ANNULATION = "\n  La location des véhicules de type %c et de grandeur %c est annulée...\n";
+    public static final String MSG_ANNULATION = "\nLa location des véhicules de type %c et de grandeur %c est annulée...\n";
 
     // TOUTES LES CONSTANTES SONT DISTRIBUÉES DANS LES DIFFÉRENTES
     // CLASSES. ICI JE VEUX JUSTE VOIR LES CONSTANTES SUIVANTES :
@@ -28,42 +25,35 @@ public class ApplicationPrincipale {
     //  - LES VALEURS ENTIÈRES POUR VALIDER LA SAISIE DU NOM, DU PRÉNOM, DU NUMÉRO DE TÉLÉPHONE DU LOCATAIRE .
     //  - LES VALEURS ENTIÈRES POUR VALIDER LA SAISIE DU NOMBRE DE JOURS DE LOCATION ET DU NOMBRE DE VÉHICULES À LOUER.
 
-    public static final int NUMERO_CHOIX_MAX = 5;
-    public static final int NUMBERO_CHOIX_MIN = 1;
-    public static final int MAX_CHAR_NOM_PRENOM = 30;
-    public static final int MIN_CHAR_NOM_PRENOM = 2;
+
+    // Il nous manque du nombre de véhicule à louer, validation pour nom et prenom
+
+
     public static final String FORMAT_TELEPHONE = "\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}";
-    public static final String FORMAT_PERMIS = "[A-Za-z]{1}[0-9]{4}-[0-9]{6}-[0-9]{2}";
     public static final int MAXJOURSLOCATION = 30;
     public static final int MINJOURSLOCATION = 0;
-
-    public static final char VEHICULE_HYBRIDE = 'h';
-    public static final char VEHICULE_ELECTRIQUE = 'e';
-    public static final char VEHICULE_PETIT = 'p';
-    public static final char VEHICULE_INTERMEDIAIRE = 'i';
-    public static final char VEHICULE_GRAND = 'g';
-    public static final char CARTE_DEBIT = 'd';
-    public static final char CARTE_CREDIT = 'c';
-    public static final char VISA_CARTE_CREDIT = 'v';
-    public static final char MC_CARTE_CREDIT = 'm';
-    public static final String ENCADRE_TITRE = "---------------------------------------------------------------------------------";
-    public static final String MESSAGE_BIENVENUE = "Bienvenue dans le système de facturation de Roulons des véhicules verts (RVV)";
-    public static final String MESSAGE_MENU_CHOIX = "*** Menu de choix ***";
     public static final String CHOIX_UN = "1. Facturer la location d'un véhicule";
     public static final String CHOIX_DEUX = "2. Afficher le nombre de véhicules hybrides et électriques loués";
     public static final String CHOIX_TROIS = "3. Afficher l'inventaire des véhicules";
     public static final String CHOIX_QUATRE = "4. Afficher toutes les factures";
     public static final String CHOIX_CINQ = "5. Quitter le programme";
-    public static final String NOM_ENTREPRISE = "Roulons les Véhicules Verts (RVV)";
-    public static final String ADRESSE_ENTREPRISE = "1500 rue Matata, Hakuna, Québec Y0Z 6Y7";
-    public static final String TELEPHONE_ENTREPRISE = "(438) 222-1111";
-    public static DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+
+    // Ceux qu'on a rajouté : should we not??
+
+    public static final String FORMAT_PERMIS = "[A-Za-z]{1}[0-9]{4}-[0-9]{6}-[0-9]{2}";
+    public static final String ENCADRE_TITRE = "---------------------------------------------------------------------------------";
+    public static final String MESSAGE_BIENVENUE = "Bienvenue dans le système de facturation de Roulons des véhicules verts (RVV)";
+    public static final String MESSAGE_MENU_CHOIX = "*** Menu de choix ***";
+
+
+
     public static final String MESSAGE_NOMBRE_VEHICULE_INVENTAIRE = "Nombre de véhicules disponibles dans l'inventaire";
     public static final String MESSAGE_NOMBRE_VEHICULE_LOUEE = "Nombre de véhicules loués par type et par grandeur";
     public static final String MESSAGE_REAFFICHER_MENU = "Appuyer sur <ENTREE> pour réafficher le menu...";
 
-    public static final char ASSURANCE_OUI = 'o';
-    public static final char ASSURANCE_NON = 'n';
+    public static final char OUI = 'O';
+    public static final char NON = 'N';
 
 
     /****************************************************************************************************
@@ -105,7 +95,12 @@ public class ApplicationPrincipale {
         System.out.println();
         System.out.println();
         System.out.println(MESSAGE_MENU_CHOIX);
-        System.out.printf("%s\n%s\n%s\n%s\n", CHOIX_UN, CHOIX_DEUX, CHOIX_TROIS, CHOIX_QUATRE);
+        System.out.printf("%s\n%s\n%s\n%s\n%s\n",
+                CHOIX_UN,
+                CHOIX_DEUX,
+                CHOIX_TROIS,
+                CHOIX_QUATRE,
+                CHOIX_CINQ);
         System.out.println();
         System.out.println();
     }
@@ -113,9 +108,9 @@ public class ApplicationPrincipale {
     /**
      * Demande à l'utilisateur de saisir un choix valide pour le menu.
      * Si l'utilisateur saisit un choix invalide, un message d'erreur est affiché
-     * et les options sont de nouveau présentées. (2)
+     * et les options sont de nouveau présentées.
      *
-     * @return Le choix valide de l'utilisateur (entre 1 et 4).
+     * @return Le choix valide de l'utilisateur (entre 1 et 5).
      */
 
     public static byte lireChoixMenu() {
@@ -123,18 +118,23 @@ public class ApplicationPrincipale {
         byte choixUtilisateur;
         do {
             System.out.print("Entrez votre choix : ");
-            choixUtilisateur = Clavier.lireByteLn();
+            try {
+                choixUtilisateur = Clavier.lireByteLn();
+            } catch (NumberFormatException e) {
+                choixUtilisateur = -1;
+            }
 
 
-            if (choixUtilisateur < 1 | choixUtilisateur > 4) {
+            if (choixUtilisateur < 1 | choixUtilisateur > 5) {
 
                 System.out.println();
                 System.out.println("L’option choisie est invalide!");
                 afficherOptionsMenu();
             }
 
-        } while (choixUtilisateur < 1 | choixUtilisateur > 4);
+        } while (choixUtilisateur < 1 | choixUtilisateur > 5);
 
+        System.out.println();
         return choixUtilisateur;
     }
 
@@ -144,14 +144,6 @@ public class ApplicationPrincipale {
      */
     private static void afficherEnteteEntreprise() {
 
-        LocalDateTime now = LocalDateTime.now();
-        String dateNowFormatee = now.format(FORMATTER);
-
-        System.out.println("\n" + ENCADRE_TITRE);
-        System.out.println(NOM_ENTREPRISE);
-        System.out.println("Adresse :       " + ADRESSE_ENTREPRISE);
-        System.out.println("Téléphone :     " + TELEPHONE_ENTREPRISE);
-        System.out.println("Date et Heure : " + dateNowFormatee);
 
     }
 
@@ -308,13 +300,12 @@ public class ApplicationPrincipale {
         boolean estTypeValide = false;
 
         do {
-            System.out.println();
             System.out.println("Entrez le type du véhicule à louer");
             System.out.print("(H ou h pour Hybride, et E ou e pour Électrique) : ");
-            choixType = Character.toLowerCase(Clavier.lireCharLn());
+            choixType = Character.toUpperCase(Clavier.lireCharLn());
 
 
-            if (choixType == VEHICULE_HYBRIDE || choixType == VEHICULE_ELECTRIQUE) {
+            if (choixType == Vehicule.H || choixType == Vehicule.E) {
                 estTypeValide = true;
             } else {
                 System.out.println();
@@ -343,9 +334,9 @@ public class ApplicationPrincipale {
             System.out.println();
             System.out.println("Entrez la grandeur du véhicule à louer");
             System.out.print("(P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :    ");
-            choixGrandeur = Character.toLowerCase(Clavier.lireCharLn());
+            choixGrandeur = Character.toUpperCase(Clavier.lireCharLn());
 
-            if (choixGrandeur == VEHICULE_PETIT || choixGrandeur == VEHICULE_INTERMEDIAIRE || choixGrandeur == VEHICULE_GRAND) {
+            if (choixGrandeur == Vehicule.P || choixGrandeur == Vehicule.I|| choixGrandeur == Vehicule.G) {
                 estGrandeurValide = true;
             } else {
                 System.out.println();
@@ -375,15 +366,21 @@ public class ApplicationPrincipale {
         do {
             System.out.println("Entrez le nombre de jours de location");
             System.out.print("(supérieur à 0 et inférieur ou égal à 30) :    ");
-            nombreJours = Clavier.lireInt();
+
+            try {
+                nombreJours = Clavier.lireInt();
+            } catch (NumberFormatException e) {
+                nombreJours = - 1;
+            }
+            System.out.println();
 
             if (nombreJours <= MINJOURSLOCATION || nombreJours > MAXJOURSLOCATION) {
-                System.out.println();
+
                 System.out.println("Le nombre de jours de location est invalide!");
             } else {
                 estNbrJourValide = true;
             }
-            System.out.println();
+
 
         } while (!estNbrJourValide);
 
@@ -405,9 +402,9 @@ public class ApplicationPrincipale {
         do {
             System.out.println("Entrez le mode de paiement");
             System.out.print("(D ou d pour Débit, C ou c pour Crédit): ");
-            choixPaiement = Character.toLowerCase(Clavier.lireCharLn());
+            choixPaiement = Character.toUpperCase(Clavier.lireCharLn());
 
-            if (choixPaiement != CARTE_DEBIT && choixPaiement != CARTE_CREDIT) {
+            if (choixPaiement != Facture.D && choixPaiement != Facture.C) {
                 System.out.println();
                 System.out.println("Le mode de paiement est invalide!");
             } else {
@@ -436,9 +433,9 @@ public class ApplicationPrincipale {
         do {
             System.out.println("Entrez le type de la carte de crédit");
             System.out.print("(V ou v pour Visa, et M ou m pour MasterCard): ");
-            choixCarteCredit = Character.toLowerCase(Clavier.lireCharLn());
+            choixCarteCredit = Character.toUpperCase(Clavier.lireCharLn());
 
-            if (choixCarteCredit != VISA_CARTE_CREDIT && choixCarteCredit != MC_CARTE_CREDIT) {
+            if (choixCarteCredit != Facture.V && choixCarteCredit != Facture.M) {
                 System.out.println();
                 System.out.println("Le type de la carte de crédit est invalide!");
             } else {
@@ -495,9 +492,9 @@ public class ApplicationPrincipale {
         do {
             System.out.println("Désirez-vous prendre l'assurance");
             System.out.print("(O ou o pour Oui, N ou n pour Non) ? :    ");
-            choixAssurance = Character.toLowerCase(Clavier.lireCharLn());
+            choixAssurance = Character.toUpperCase(Clavier.lireCharLn());
 
-            if (choixAssurance != ASSURANCE_OUI && choixAssurance != ASSURANCE_NON) {
+            if (choixAssurance != OUI && choixAssurance != NON) {
                 System.out.println();
                 System.out.println("La réponse est invalide!");
             } else {
@@ -521,13 +518,22 @@ public class ApplicationPrincipale {
 
         do {
             System.out.println("Entrez le nombre de véhicules à louer");
-            System.out.println("(0 à 5 inclusivement) : ");
-            nombreVehiculesLoues = Clavier.lireInt();
+            System.out.print("(0 à 5 inclusivement) : ");
 
-            if (nombreVehiculesLoues >= 0 && nombreVehiculesLoues < 5) {
+            try {
+                nombreVehiculesLoues = Clavier.lireInt();
+            } catch (NumberFormatException e) {
+                nombreVehiculesLoues = -1;
+            }
+
+            System.out.println();
+
+            if (nombreVehiculesLoues >= 0 && nombreVehiculesLoues <= 5) {
                 nbVehiculesEstValide = true;
             } else {
+                System.out.println();
                 System.out.println("Le nombre de véhicules à louer est invalide!");
+                System.out.println();
             }
         } while (!nbVehiculesEstValide);
         return nombreVehiculesLoues;
@@ -538,28 +544,34 @@ public class ApplicationPrincipale {
      * type et une autre grandeur de véhicule
      */
 
-    public static char lireChoixAjouterVehicule(){
+    public static char lireChoixAjouterVehicule() {
         char choixAjouter;
         boolean estValide = false;
 
         do {
             System.out.println("Désirez-vous louer d'autres véhicules");
-            System.out.println("(O ou o pour Oui, N ou n pour Non) ? : ");
-            choixAjouter = Clavier.lireCharLn();
+            System.out.print("(O ou o pour Oui, N ou n pour Non) ? : ");
+            choixAjouter = Character.toUpperCase(Clavier.lireCharLn());
 
-            if (choixAjouter == 'o' || choixAjouter == 'n'){
+            if (choixAjouter == OUI || choixAjouter == NON) {
                 estValide = true;
             } else {
-                 System.out.println("La réponse est invalide!");
+                System.out.println();
+                System.out.println("La réponse est invalide!");
             }
+
+            System.out.println();
         } while (!estValide);
         return choixAjouter;
     }
 
-    public static void appuyezPourReafficherMenu(){
+    public static void Pause() {
+        System.out.println();
         System.out.println(MESSAGE_REAFFICHER_MENU);
         Clavier.lireFinLigne();
     }
+
+
 
     public static void main(String[] args) {
 
@@ -581,6 +593,7 @@ public class ApplicationPrincipale {
 
         // AJOUTEZ LES VARIABLES LOCALES MANQUANTES
         // *** À COMPLÉTER
+        boolean nbEstDisponible;
 
         // Lire les données des véhicules disponibles dans l'inventaire
         GestionVehiculesDisponibles.lireFichierVehiculesDisponibles();
@@ -595,7 +608,7 @@ public class ApplicationPrincipale {
         sortie = false;
 
         do {
-            afficherOptionsMenu();  
+            afficherOptionsMenu();
             // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE L'OPTION CHOISIE PAR L'UTILISATEUR.
             choixMenu = lireChoixMenu();
 
@@ -620,16 +633,29 @@ public class ApplicationPrincipale {
                         // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LA GRANDEUR DU VÉHICULE.
                         grandeurVehicule = saisiGrandeurVehicule();
 
+
+
                         if (locationVehicule.obtenirPlaceVehiculeLoue(typeVehicule, grandeurVehicule) != -1) {
-                            System.out.print("\n  Vous avez déjà loué un ou des véhicules de ce type et de cette grandeur...\n");
+                            System.out.print("Vous avez déjà loué un ou des véhicules de ce type et de cette grandeur...");
+                            System.out.println();
+                            System.out.println();
 
                         } else {
 
                             // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NOMBRE DE VÉHICULES À LOUER.
-                            nbVehiculesALouer = lireNombreVehiculesLoues();
+
+
+                            do {
+                                nbVehiculesALouer = lireNombreVehiculesLoues();
+                                nbEstDisponible = GestionVehiculesDisponibles.estDisponible(typeVehicule, grandeurVehicule, nbVehiculesALouer);
+
+
+                            } while (!nbEstDisponible);
+
 
                             if (nbVehiculesALouer == 0) {
                                 System.out.printf(MSG_ANNULATION, typeVehicule, grandeurVehicule);
+                                System.out.println();
 
                             } else {
 
@@ -639,6 +665,7 @@ public class ApplicationPrincipale {
 
                                 // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NOMBRE DE JOURS DE LOCATION.
                                 nbJoursLocation = lireNombreJourLocation();
+
 
                                 // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LA RÉPONSE DE LA QUESTION
                                 // SI L'UTILISATEUR DÉSIRE PRENDRE UNE ASSURANCE.
@@ -650,8 +677,8 @@ public class ApplicationPrincipale {
 
                                 // APPELEZ LA MÉTHODE obtenirPrixAssuranceVehParJour DE LA CLASSE GestionVehiculesDisponibles
                                 // POUR OBTENIR LE PRIX DE L'ASSURANCE PAR JOUR POUR CE TYPE ET DE CETTE GRANDEUR DE VÉHICULE.
+                                float prixAssuranceParJour = GestionVehiculesDisponibles.obtenirPrixAssuranceVehParJour(typeVehicule, grandeurVehicule, choixAssurance);
 
-                                float prixAssuranceParJour = GestionVehiculesDisponibles.obtenirPrixAssuranceVehParJour(typeVehicule, grandeurVehicule, choixAssurance == 'o');
 
                                 // CRÉEZ UN OBJET DE TYPE vehicule AVEC LES PARAMÈTRES SUIVANTS :
                                 // LE TYPE DE VÉHICULE, LA GRANDEUR DU VÉHICULE, LE PRIX DE LA LOCATION PAR JOUR,
@@ -675,11 +702,11 @@ public class ApplicationPrincipale {
 
                         // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LA RÉPONSE DE LA QUESTION
                         // SI LE LOCATAIRE DÉSIRE LOUER D'AUTRES VÉHICULES.
-                          reponse = lireChoixAjouterVehicule();
+                        reponse = lireChoixAjouterVehicule();
 
                         // TANT QUE LE LOCATAIRE DÉSIRE LOUER D'AUTRES VÉHICULES
                         // *** À COMPLETER LA BOUCLE WHILE CI-DESSOUS
-                    } while (reponse == 'o');
+                    } while (reponse == OUI);
 
                     if (locationVehicule.obtenirNombreVehiculeLoue() > 0) {
 
@@ -712,20 +739,20 @@ public class ApplicationPrincipale {
                         facture = new Facture(dateFacture, locationVehicule, modePaiement);
 
                         // SI LE MODE DE PAIEMENT EST CRÉDIT
-                        if (modePaiement == CARTE_CREDIT) {
+                        if (modePaiement == Facture.C) {
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE TYPE DE LA CARTE DE CRÉDIT.
+                            // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE TYPE DE LA CARTE DE CRÉDIT.
                             char typeCarteCredit = lireCarteCredit();
 
-                        // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NUMÉRO DE LA CARTE DE CRÉDIT.
+                            // APPELEZ LA MÉTHODE QUI SAISIT ET VALIDE LE NUMÉRO DE LA CARTE DE CRÉDIT.
                             String numeroCarteCredit = saisiNumeroCarteCredit();
 
-                        // APPELEZ LA MÉTHODE setTypeCarteCredit DE L'OBJET facture
-                        // POUR MODIFIER LE TYPE DE LA CARTE DE CRÉDIT.
+                            // APPELEZ LA MÉTHODE setTypeCarteCredit DE L'OBJET facture
+                            // POUR MODIFIER LE TYPE DE LA CARTE DE CRÉDIT.
                             facture.setTypeCredit(typeCarteCredit);
 
-                        // APPELEZ LA MÉTHODE setNumeroCarteCredit DE L'OBJET facture
-                        // POUR MODIFIER LE NUMÉRO DE LA CARTE DE CRÉDIT.
+                            // APPELEZ LA MÉTHODE setNumeroCarteCredit DE L'OBJET facture
+                            // POUR MODIFIER LE NUMÉRO DE LA CARTE DE CRÉDIT.
                             facture.setNoCredit(numeroCarteCredit);
                         }
 
@@ -750,29 +777,29 @@ public class ApplicationPrincipale {
                     // VOUS DEVEZ APPELER LA MÉTHODE DE PAUSE AVANT
                     // D'AFFICHER LE MENU PRINCIPAL.
                     // *** À COMPLÉTER
-                    appuyezPourReafficherMenu();
+                    Pause();
 
                     break;
 
                 case 2:
                     // APPELEZ LA MÉTHODE afficherNbVehiculesLoues DE LA CLASSE StatistiquesVehiculesLoues
                     // POUR AFFICHER LE NOMBRE DE VÉHICULES LOUÉS PAR TYPE ET GRANDEUR DE VÉHICULE
-                    // *** À COMPLÉTER
+                    StatistiquesVehiculesLoues.afficherNbVehiculesLoues();
 
                     // VOUS DEVEZ APPELER LA MÉTHODE DE PAUSE AVANT
-                    // D'AFFICHER LE MENU PRINCIPAL.
-                    // *** À COMPLÉTER
+                    Pause();
+
 
                     break;
 
                 case 3:
                     // APPELEZ LA MÉTHODE afficher DE LA CLASSE GestionVehiculesDisponibles
                     // POUR AFFICHER LA LISTE DES VÉHICULES DISPONIBLES
-                    // *** À COMPLÉTER
+                    GestionVehiculesDisponibles.afficher();
 
                     // VOUS DEVEZ APPELER LA MÉTHODE DE PAUSE AVANT
                     // D'AFFICHER LE MENU PRINCIPAL.
-                    // *** À COMPLÉTER
+                    Pause();
 
                     break;
 
@@ -780,11 +807,11 @@ public class ApplicationPrincipale {
 
                     // APPELEZ LA MÉTHODE afficher DE LA CLASSE ListeDesFactures
                     // POUR AFFICHER TOUTES LES FACTURES CRÉÉES
-                    // *** À COMPLÉTER
+                    ListeDesFactures.afficher();
 
                     // VOUS DEVEZ APPELER LA MÉTHODE DE PAUSE AVANT
                     // D'AFFICHER LE MENU PRINCIPAL.
-                    // *** À COMPLÉTER
+                    Pause();
 
                     break;
 
@@ -793,10 +820,10 @@ public class ApplicationPrincipale {
 
                     // APPELEZ LA MÉTHODE ecrireFacture DE LA CLASSE ListeDesFactures
                     // POUR ÉCRIRE LES DONNÉES DE TOUTES LES FACTURES DANS LE FICHIER Factures.csv.
-                    // *** À COMPLÉTER
+                    ListeDesFactures.ecrireFacture();
 
                     // APPELEZ LE MESSAGE DE REMERCIEMENT
-                    System.out.println("\n\n  Merci et à la prochaine ! ");
+                    System.out.println("\n\n" + "Merci et à la prochaine ! ");
 
                     sortie = true;
 
