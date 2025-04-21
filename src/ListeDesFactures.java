@@ -33,45 +33,32 @@ public class ListeDesFactures {
     private static final String MSG_CONTINUER = "Appuyer sur <ENTREE> pour continuer l'affichage des factures...";
 
     // Déclaration des variables de classee
-    private static int nbFactures = 0;
     private static Facture[] lesFactures = new Facture[NB_MAX_FACTURES];
 
     /**
-     * Ajouter la facture à la prochaine position libre du tableau des factures (lesFactures).
-     * Cette position libre doit être inférieure à la taille du tableau des factures. Le nombre
-     * courant de factures doit être incrémenter.
+     * Ajoute la facture courante à la prochaine position libre du tableau des factures.
      *
-     * @param facture la facture à ajouter
-     * @return vrai si la facture a été ajouté, sinon faux
+     * @param facture la facture courante à ajouter
+     * @return {@code true} si la facture a été ajoutée, {@code false} si le tableau est plein.
      */
     public static boolean ajouterFacture(Facture facture) {
 
-        boolean added = false;
+        boolean estAjoutee = false;
 
       /* On attribue la facture au premier emplacement vide du tableau et on s'assure de n'ajouter qu'une seule facture
-      à la fois avec le boolean added*/
+      à la fois avec le booléen estAjoutee*/
         for (int i = 0; i < lesFactures.length; i++) {
-            if (lesFactures[i] == null && added == false) {
+            if (lesFactures[i] == null && !estAjoutee) {
                 lesFactures[i] = facture;
-                added = true;
+                estAjoutee = true;
             }
         }
-        return added;
+        return estAjoutee;
     }
 
     /**
-     * Écrire les données de toutes les factures dans le fichier Factures.csv.
-     * <p>
-     * Les données de chaque ligne doivent être separées entre elles par des
-     * points-virgules. Chaque facture doit être affichée sur :
-     * - une seule ligne si le tableau des véhicules loués contient un seul élément.
-     * - 2 lignes si le tableau des véhicules loués contient 2 éléments.
-     * - Ainsi de suite.
-     * <p>
-     * Les nouvelles données des factures doivent remplacer les anciennes données.
-     * <p>
-     * Pour plus de détails, voir l'exemple de Factures.csv fourni avec l'énoncé du travail
-     * pratique 3.
+     * Sauvegarde toutes les factures du tableau dans un fichier Factures.csv.
+     * Les anciennes données sont écrasées s'il y a lieu.
      */
     public static void ecrireFacture() {
         FileWriter fluxConnecteur;
@@ -97,21 +84,20 @@ public class ListeDesFactures {
     }
 
     /**
-     * La méthode doit afficher toutes les factures qui sont dans le tableau des factures.
-     * Pour plus de détails sur l'affichage, voir les exemples de la trace d'exécution du
-     * programme fournis avec l'énoncé du Travail pratique 3.
+     * Affiche toutes les factures enregistrées dans le tableau des factures.
      */
     public static void afficher() {
 
         boolean listeFactureVide = false;
 
 
-        for (int i = 0; i < lesFactures.length && listeFactureVide != true; i++) {
+        for (int i = 0; i < lesFactures.length && !listeFactureVide; i++) {
             if (lesFactures[i] != null) {
                 listeFactureVide = false;
                 lesFactures[i].afficherFacture();
                 if (lesFactures[i + 1] != null) {
                     System.out.println(MSG_CONTINUER);
+                    Clavier.lireFinLigne();
                 }else{
                     listeFactureVide = true;
                 }
@@ -119,7 +105,6 @@ public class ListeDesFactures {
                 listeFactureVide = true;
                 System.out.println();
                 System.out.println("Aucune facture à afficher...");
-
             }
         }
     }

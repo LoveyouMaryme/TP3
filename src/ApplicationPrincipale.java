@@ -156,11 +156,12 @@ public class ApplicationPrincipale {
      */
     public static void afficherEnteteEntreprise(int noFacture) {
 
+
         System.out.println(ENCADRE_TITRE);
         System.out.println(Facture.NOM_ENTREPRISE);
         System.out.printf("%-35s%s%n", "Adresse : ", Facture.ADRESSE_ENTREPRISE);
         System.out.printf("%-35s%s%n", "Téléphone : ", Facture.TELEPHONE_ENTREPRISE);
-        System.out.printf("%-35s%s%n", "Date et Heure : ", DateFormat.getDateInstance().format(Facture.FORMATTER));
+        System.out.printf("%-35s%s%n", "Date et Heure : ", LocalDateTime.now().format(Facture.FORMATTER));
         if (noFacture > 0){
             System.out.printf("%-35s%s%n", "Facture No : ", noFacture);
         }
