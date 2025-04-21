@@ -42,7 +42,8 @@ public class StatistiquesVehiculesLoues {
 
         do {
 
-                VehiculeLoue enregistrementLocation = lesVehiculesLoues[prochainEmplacement];
+
+            VehiculeLoue enregistrementLocation = lesVehiculesLoues[prochainEmplacement];
 
             if (enregistrementLocation == null) {
                 lesVehiculesLoues[prochainEmplacement] = vehiculeLoue;
@@ -66,8 +67,13 @@ public class StatistiquesVehiculesLoues {
                 }
             }
 
+
         } while (!emplacementNonTrouve && prochainEmplacement != 6);
 
+        System.out.println("DEBUG - État du tableau des véhicules loués :");
+        for (int i = 0; i < lesVehiculesLoues.length; i++) {
+            System.out.println("[" + i + "] = " + lesVehiculesLoues[i]);
+        }
 
     }
 
@@ -100,9 +106,11 @@ public class StatistiquesVehiculesLoues {
                     nbrVehiculesLoue = lesVehiculesLoues[emplacementVehicule].getNbrVehiculeLoue();
                 }
 
-                emplacementVehicule++;
+
             }
-        }while(!vehiculeTrouve &&  emplacementVehicule == lesVehiculesLoues.length -1 );
+
+            emplacementVehicule++;
+        }while(!vehiculeTrouve &&  emplacementVehicule != lesVehiculesLoues.length  );
 
         return nbrVehiculesLoue;
     }

@@ -58,8 +58,8 @@ public class LocationVehicule {
 
         for (int i = 0; i < this.vehiculesLoues.length && !vehiculeEstajoute; i++) {
 
-            if( this.vehiculesLoues[i] == null){
-                this.vehiculesLoues[i] = vehiculeLoue;
+            if( vehiculesLoues[i] == null){
+                vehiculesLoues[i] = vehiculeLoue;
                 vehiculeEstajoute = true;
             }
         }
