@@ -131,24 +131,6 @@ public class ApplicationPrincipale {
 
     }
 
-    /**
-     * Affiche l'en-tête d'une table contenant l'inventaire des véhicules.
-     *
-     * @param disponible Détermine si l'affichage concerne les véhicules disponibles (true)
-     *                   ou les véhicules loués (false).
-     */
-    private static void afficherEnteteInventaire(boolean disponible) {
-
-        System.out.println(ENCADRE_TITRE);
-        if (disponible) {
-            System.out.println("\n" + MESSAGE_NOMBRE_VEHICULE_INVENTAIRE);
-        } else {
-            System.out.println("\n" + MESSAGE_NOMBRE_VEHICULE_LOUEE);
-        }
-        System.out.println("*************************************************");
-        System.out.println("Grandeur          Hybride      Électrique");
-        System.out.println("****************************************");
-    }
 
     /**
      * Demande le prénom du locataire à l'utilisateur.
@@ -158,7 +140,6 @@ public class ApplicationPrincipale {
      *
      * @return Le prénom valide saisi par l'utilisateur.
      */
-
     public static String lirePrenomUtilisateur() {
         String prenomLocataire;
         boolean estPrenomValide = false;
@@ -530,7 +511,6 @@ public class ApplicationPrincipale {
      * Saisie et validation de la réponse de la question si le locataire veut louer un autre
      * type et une autre grandeur de véhicule
      */
-
     public static char lireChoixAjouterVehicule() {
         char choixAjouter;
         boolean estValide = false;
