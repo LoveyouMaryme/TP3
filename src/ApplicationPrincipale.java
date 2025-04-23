@@ -1,55 +1,39 @@
-import java.text.DateFormat;
 import java.time.LocalDateTime;
-import java.util.Formatter;
 
 /**
  * Université du Québec à Montréal (UQAM)
  * INF1120 - 010 - Hiver 2025
  * Travail pratique 3
- *
+ * <p>
  * Classe ApplicationPrincipale contient les méthodes d'affichage de menus, de saisies et de
  * validations. Également elle contient la méthode "main". Cette classe permet de tester toutes
  * les autres classes en créant des objets et en appelant leurs méthodes lors de l'application
  * des règles d'affaires liées aux différentes options du menu principal.
  *
- * @author Love-Mary Victor, Sami Lies Mouzai
- * @since 31 mars 2025
- *
+ * @author : Love-Mary Victor (VICL12559701), Sami Lies Mouzai (MOUS27039501)
+ * @version : 23 Avril, 2025
+ * @github : https://github.com/LoveyouMaryme/TP3
  */
 
 public class ApplicationPrincipale {
 
-    public static final String MSG_ANNULATION = "\nLa location des véhicules de type %c et de grandeur %c est annulée...\n";
-
-    // TOUTES LES CONSTANTES SONT DISTRIBUÉES DANS LES DIFFÉRENTES
-    // CLASSES. ICI JE VEUX JUSTE VOIR LES CONSTANTES SUIVANTES :
-    //  - LES VALEURS ENTIÈRES POUR VALIDER LE CHOIX DU MENU.
-    //  - LES VALEURS ENTIÈRES POUR VALIDER LA SAISIE DU NOM, DU PRÉNOM, DU NUMÉRO DE TÉLÉPHONE DU LOCATAIRE .
-    //  - LES VALEURS ENTIÈRES POUR VALIDER LA SAISIE DU NOMBRE DE JOURS DE LOCATION ET DU NOMBRE DE VÉHICULES À LOUER.
-
-
-    // Il nous manque du nombre de véhicule à louer, validation pour nom et prenom
-
+    public static final String MSG_ANNULATION = "La location des véhicules de type %c et de grandeur %c est annulée...\n";
 
     public static final String FORMAT_TELEPHONE = "\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}";
+    public static final String FORMAT_PERMIS = "[A-Za-z]{1}[0-9]{4}-[0-9]{6}-[0-9]{2}";
+
     public static final int MAXJOURSLOCATION = 30;
     public static final int MINJOURSLOCATION = 0;
+
     public static final String CHOIX_UN = "1. Facturer la location d'un véhicule";
     public static final String CHOIX_DEUX = "2. Afficher le nombre de véhicules hybrides et électriques loués";
     public static final String CHOIX_TROIS = "3. Afficher l'inventaire des véhicules";
     public static final String CHOIX_QUATRE = "4. Afficher toutes les factures";
     public static final String CHOIX_CINQ = "5. Quitter le programme";
 
-
-    // Ceux qu'on a rajouté : should we not??
-
-    public static final String FORMAT_PERMIS = "[A-Za-z]{1}[0-9]{4}-[0-9]{6}-[0-9]{2}";
     public static final String ENCADRE_TITRE = "---------------------------------------------------------------------------------";
     public static final String MESSAGE_BIENVENUE = "Bienvenue dans le système de facturation de Roulons des véhicules verts (RVV)";
     public static final String MESSAGE_MENU_CHOIX = "*** Menu de choix ***";
-
-
-
     public static final String MESSAGE_NOMBRE_VEHICULE_INVENTAIRE = "Nombre de véhicules disponibles dans l'inventaire";
     public static final String MESSAGE_NOMBRE_VEHICULE_LOUEE = "Nombre de véhicules loués par type et par grandeur";
     public static final String MESSAGE_REAFFICHER_MENU = "Appuyer sur <ENTREE> pour réafficher le menu...";
@@ -58,32 +42,10 @@ public class ApplicationPrincipale {
     public static final char NON = 'N';
 
 
-    /****************************************************************************************************
-     AJOUTEZ TOUTES VOS MÉTHODES "public" et "static" SUIVANTES DÉFINIES DANS LE TRAVAIL PRATIQUE 2.
-     1)  Affichage du message de bienvenue    --
-     2)  Saisie et validation de l’option choisie par l’utilisateur    --
-     3)  Saisie et validation du prénom du locataire     --
-     4)  Saisie et validation du nom du locataire    --
-     5)  Saisie et validation du numéro de téléphone du locataire    --
-     6)  Saisie et validation du numéro de permis de conduire    --
-     7)  Saisie et validation du type de véhicule    --
-     8)  Saisie et validation de la grandeur du véhicule     --
-     9)  Saisie et validation du nombre de jours de location    --
-     10) Saisie et validation du mode de paiement    --
-     11) Saisie et validation du type de la carte de crédit    --
-     12) Saisie et validation du numéro de la carte de crédit    --
-     13) Saisie et validation de la réponse de la question si le locataire veut une assurance--
-     14) Saisie et validation du nombre de véhicules loués
-     15) Saisie et validation de la réponse de la question si le locataire veut louer un autre
-     type et une autre grandeur de véhicule
-     16) Demander à l’utilisateur d’appuyer sur <ENTRÉE> pour réafficher le menu principal
-     *********************************************************************************************************/
-
-
     /**
      * Affiche un message de bienvenue pour l'entreprise Roulons les Véhicules Verts (RVV) (1)
      */
-    public static void afficherMessageBievenue() {
+    public static void afficherMessageBienvenue() {
         System.out.println(ENCADRE_TITRE);
         System.out.println(MESSAGE_BIENVENUE);
         System.out.println(ENCADRE_TITRE);
@@ -128,7 +90,6 @@ public class ApplicationPrincipale {
 
 
             if (choixUtilisateur < 1 | choixUtilisateur > 5) {
-
                 System.out.println();
                 System.out.println("L’option choisie est invalide!");
                 afficherOptionsMenu();
@@ -163,7 +124,7 @@ public class ApplicationPrincipale {
         System.out.printf("%-" + nbEspace + "s%s%n", "Adresse : ", Facture.ADRESSE_ENTREPRISE);
         System.out.printf("%-" + nbEspace + "s%s%n", "Téléphone : ", Facture.TELEPHONE_ENTREPRISE);
         System.out.printf("%-" + nbEspace + "s%s%n", "Date et Heure : ", LocalDateTime.now().format(Facture.FORMATTER));
-        if (noFacture > 0){
+        if (noFacture > 0) {
             System.out.printf("%-" + nbEspace + "s%s%n", "Facture No : ", noFacture);
         }
         System.out.println(ENCADRE_TITRE);
@@ -333,8 +294,10 @@ public class ApplicationPrincipale {
             } else {
                 System.out.println();
                 System.out.println("Le type de véhicule est invalide!");
+
             }
 
+            System.out.println();
 
         } while (!estTypeValide);
         return choixType;
@@ -354,22 +317,21 @@ public class ApplicationPrincipale {
         boolean estGrandeurValide = false;
 
         do {
-            System.out.println();
             System.out.println("Entrez la grandeur du véhicule à louer");
             System.out.print("(P ou p pour Petit, I ou i pour Intermédiaire, et G ou g pour Grand) :    ");
             choixGrandeur = Character.toUpperCase(Clavier.lireCharLn());
 
-            if (choixGrandeur == Vehicule.P || choixGrandeur == Vehicule.I|| choixGrandeur == Vehicule.G) {
+            if (choixGrandeur == Vehicule.P || choixGrandeur == Vehicule.I || choixGrandeur == Vehicule.G) {
                 estGrandeurValide = true;
             } else {
                 System.out.println();
                 System.out.println("La grandeur du véhicule est invalide!");
             }
 
-
+            System.out.println();
         } while (!estGrandeurValide);
 
-        System.out.println();
+
         return choixGrandeur;
 
     }
@@ -393,17 +355,18 @@ public class ApplicationPrincipale {
             try {
                 nombreJours = Clavier.lireInt();
             } catch (NumberFormatException e) {
-                nombreJours = - 1;
+                nombreJours = -1;
             }
-            System.out.println();
+
 
             if (nombreJours <= MINJOURSLOCATION || nombreJours > MAXJOURSLOCATION) {
-
+                System.out.println();
                 System.out.println("Le nombre de jours de location est invalide!");
             } else {
                 estNbrJourValide = true;
             }
 
+            System.out.println();
 
         } while (!estNbrJourValide);
 
@@ -549,15 +512,16 @@ public class ApplicationPrincipale {
                 nombreVehiculesLoues = -1;
             }
 
-            System.out.println();
-
             if (nombreVehiculesLoues >= 0 && nombreVehiculesLoues <= 5) {
                 nbVehiculesEstValide = true;
             } else {
                 System.out.println();
                 System.out.println("Le nombre de véhicules à louer est invalide!");
-                System.out.println();
+
             }
+
+            System.out.println();
+
         } while (!nbVehiculesEstValide);
         return nombreVehiculesLoues;
     }
@@ -582,9 +546,9 @@ public class ApplicationPrincipale {
                 System.out.println();
                 System.out.println("La réponse est invalide!");
             }
-
-            System.out.println();
         } while (!estValide);
+
+        System.out.println();
         return choixAjouter;
     }
 
@@ -593,11 +557,9 @@ public class ApplicationPrincipale {
      * avant de continuer et réafficher le menu.
      */
     public static void Pause() {
-        System.out.println();
-        System.out.println(MESSAGE_REAFFICHER_MENU);
+        System.out.print(MESSAGE_REAFFICHER_MENU);
         Clavier.lireFinLigne();
     }
-
 
 
     public static void main(String[] args) {
@@ -622,7 +584,7 @@ public class ApplicationPrincipale {
 
         GestionVehiculesDisponibles.lireFichierVehiculesDisponibles();
 
-        afficherMessageBievenue();
+        afficherMessageBienvenue();
 
         /***************************************************
          * Début du programme
@@ -745,7 +707,7 @@ public class ApplicationPrincipale {
 
                     break;
 
-                    //Option 2. Afficher le nombre de véhicules hybrides et électriques loués
+                //Option 2. Afficher le nombre de véhicules hybrides et électriques loués
                 case 2:
                     // Affiche un tableau contenant tous les véhicules loués jusqu'à présent
                     StatistiquesVehiculesLoues.afficherNbVehiculesLoues();
@@ -754,7 +716,7 @@ public class ApplicationPrincipale {
 
                     break;
 
-                    //Option 3. Afficher l'inventaire des véhicules disponibles
+                //Option 3. Afficher l'inventaire des véhicules disponibles
                 case 3:
                     // Affiche un tableau contenant tous les véhicules disponibles
                     GestionVehiculesDisponibles.afficher();
@@ -763,7 +725,7 @@ public class ApplicationPrincipale {
 
                     break;
 
-                    //Option 4. Afficher toutes les factures
+                //Option 4. Afficher toutes les factures
                 case 4:
                     // Déroule la liste de toutes les factures calculées jusqu'à présent
                     ListeDesFactures.afficher();
@@ -772,13 +734,13 @@ public class ApplicationPrincipale {
 
                     break;
 
-                    //Option 5. Quitter le programme
-                    //Sauvegarde les factures dans un fichier Facture.csv puis ferme le programme
+                //Option 5. Quitter le programme
+                //Sauvegarde les factures dans un fichier Facture.csv puis ferme le programme
                 case 5:
 
                     ListeDesFactures.ecrireFacture();
 
-                    System.out.println("\n\n" + "Merci et à la prochaine ! ");
+                    System.out.println("\n" + "Merci et à la prochaine ! ");
 
                     sortie = true;
             }

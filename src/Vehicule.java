@@ -1,3 +1,20 @@
+
+/**
+ * Université du Québec à Montréal (UQAM)
+ * INF1120 - 010 - Hiver 2025
+ * Travail pratique 3
+ * <p>
+ *
+ * La classe {@code Vehicule} représente un véhicule disponible à la location.
+ * Chaque véhicule est caractérisé par son type (hybride ou électrique),
+ * sa grandeur (petit, intermédiaire ou grand), ainsi que ses tarifs
+ * de location et d’assurance quotidiens.
+ *
+ * @author Love-Mary Victor (VICL12559701), Sami Lies Mouzai (MOUS27039501)
+ * @version : 23 Avril, 2025
+ * @github : https://github.com/LoveyouMaryme/TP3
+ */
+
 public class Vehicule {
 
     //Déclaration des constantes

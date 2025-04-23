@@ -10,8 +10,9 @@ import java.time.format.DateTimeFormatter;
  * GestionVehiculesDisponibles : Cette classe gère le nombre de véhicules
  * disponibles pour la location dans l'inventaire des véhicules.
  *
- * @author Love-Mary Victor, Sami Lies Mouzai
- * @since 31 mars 2025
+ * @author Love-Mary Victor (VICL12559701), Sami Lies Mouzai (MOUS27039501)
+ * @version : 23 Avril, 2025
+ * @github : https://github.com/LoveyouMaryme/TP3
  */
 public class GestionVehiculesDisponibles {
 
@@ -300,6 +301,7 @@ public class GestionVehiculesDisponibles {
         System.out.printf("%-17s%-17s%-17s%n", GRAND, obtenirNbVehiculesDisponibles(H, G), obtenirNbVehiculesDisponibles(E, G));
         System.out.println();
         System.out.println(BORDURE);
+        System.out.println();
         System.out.println();
     }
 

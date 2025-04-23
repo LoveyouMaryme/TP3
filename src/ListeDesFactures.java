@@ -12,8 +12,9 @@ import java.time.format.DateTimeFormatter;
  * ListeDesFactures : Cette classe gère toutes les factures des différentes locations de
  * véhicules.
  *
- * @author Votre prénom / votre nom
- * @since 31 mars 2025
+ * @author : Love-Mary Victor (VICL12559701), Sami Lies Mouzai (MOUS27039501)
+ * @version : 23 Avril, 2025
+ * @github : https://github.com/LoveyouMaryme/TP3
  */
 public class ListeDesFactures {
 
@@ -68,10 +69,10 @@ public class ListeDesFactures {
             fluxConnecteur = new FileWriter(FIC_FACTURES);
             fluxTampon = new BufferedWriter(fluxConnecteur);
             //Écriture
+            fluxTampon.write(ENTETE);
+            fluxTampon.newLine();
             for (Facture ligne : lesFactures) {
                 if (ligne != null) {
-                    fluxTampon.write(ENTETE);
-                    fluxTampon.newLine();
                     fluxTampon.write(ligne.formaterFacture());
                     fluxTampon.newLine();
                 }
@@ -96,15 +97,15 @@ public class ListeDesFactures {
                 listeFactureVide = false;
                 lesFactures[i].afficherFacture();
                 if (lesFactures[i + 1] != null) {
-                    System.out.println(MSG_CONTINUER);
+                    System.out.print(MSG_CONTINUER);
                     Clavier.lireFinLigne();
                 }else{
                     listeFactureVide = true;
                 }
             } else {
                 listeFactureVide = true;
-                System.out.println();
                 System.out.println("Aucune facture à afficher...");
+                System.out.println();
             }
         }
     }

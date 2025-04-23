@@ -1,7 +1,15 @@
 /**
+ * Université du Québec à Montréal (UQAM)
+ * INF1120 - 010 - Hiver 2025
+ * Travail pratique 3
+ * <p>
  * La classe {@code LocationVehicule} représente un système de location de véhicules. Elle gère
  * les véhicules loués, permet d'ajouter des véhicules au système de location et de récupérer
  * des informations sur les véhicules loués.
+ *
+ * @author Love-Mary Victor (VICL12559701), Sami Lies Mouzai (MOUS27039501)
+ * @version : 23 Avril, 2025
+ * @github : https://github.com/LoveyouMaryme/TP3
  */
 public class LocationVehicule {
 

@@ -1,6 +1,20 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Université du Québec à Montréal (UQAM)
+ * INF1120 - 010 - Hiver 2025
+ * Travail pratique 3
+ * <p>
+ * La classe {@code Facture} représente une facture générée lors de la location d'un ou plusieurs véhicules.
+ * Elle contient des informations sur le client, les véhicules loués, le mode de paiement, ainsi que les montants associés (sous-total, TPS, TVQ, total).
+ * Elle permet aussi l'affichage et la génération de la facture au format texte ou CSV.
+ *
+ * @author Love-Mary Victor (VICL12559701), Sami Lies Mouzai (MOUS27039501)
+ * @version : 23 Avril, 2025
+ * @github : https://github.com/LoveyouMaryme/TP3
+ */
+
 public class Facture {
 
     //Déclaration des constantes
@@ -36,6 +50,14 @@ public class Facture {
     private float montantTVQ;
     private float montantTotal;
 
+
+    /**
+     * Constructeur de la classe Facture.
+     *
+     * @param dateFacture      Date à laquelle la facture est générée.
+     * @param locationVehicule Objet contenant les informations sur la location de véhicules.
+     * @param modePaiement     Mode de paiement utilisé ('D' pour Débit, 'C' pour Crédit).
+     */
     public Facture(LocalDateTime dateFacture, LocationVehicule locationVehicule, char modePaiement) {
         this.dateFacture = dateFacture;
         this.locationVehicule = locationVehicule;
@@ -43,46 +65,103 @@ public class Facture {
         this.noFacture = ++compteurFacture;
     }
 
+
+    /**
+     * Retourne la date de création de la facture.
+     *
+     * @return date de la facture
+     */
     public LocalDateTime getDateFacture() {
         return dateFacture;
     }
 
+
+    /**
+     * Retourne l'objet de location associé à cette facture.
+     *
+     * @return location de véhicules
+     */
     public LocationVehicule getLocationVehicule() {
         return locationVehicule;
     }
 
+    /**
+     * Retourne le mode de paiement ('D' ou 'C').
+     *
+     * @return caractère représentant le mode de paiement
+     */
     public char getModePaiement() {
         return modePaiement;
     }
 
+    /**
+     * Retourne le type de carte de crédit utilisé ('V' ou 'M').
+     *
+     * @return caractère représentant le type de carte
+     */
     public char getTypeCredit() {
         return typeCredit;
     }
 
+    /**
+     * Retourne le numéro de la carte de crédit.
+     *
+     * @return numéro de carte de crédit (partiellement masqué à l'affichage)
+     */
     public String getNoCredit() {
         return noCredit;
     }
 
+    /**
+     * Retourne le montant du sous-total de la facture.
+     *
+     * @return montant avant taxes
+     */
     public float getSousTotal() {
         return sousTotal;
     }
 
+    /**
+     * Retourne le montant de la TPS calculé.
+     *
+     * @return montant TPS
+     */
     public float getMontantTPS() {
         return montantTPS;
     }
 
+    /**
+     * Retourne le montant de la TVQ calculé.
+     *
+     * @return montant TVQ
+     */
     public float getMontantTVQ() {
         return montantTVQ;
     }
 
+    /**
+     * Retourne le montant total incluant les taxes.
+     *
+     * @return montant total de la facture
+     */
     public float getMontantTotal() {
         return montantTotal;
     }
 
+    /**
+     * Définit le type de carte de crédit utilisée.
+     *
+     * @param typeCredit 'V' pour Visa ou 'M' pour MasterCard
+     */
     public void setTypeCredit(char typeCredit) {
         this.typeCredit = typeCredit;
     }
 
+    /**
+     * Définit le numéro de la carte de crédit utilisée.
+     *
+     * @param noCredit numéro complet de carte de crédit
+     */
     public void setNoCredit(String noCredit) {
         this.noCredit = noCredit;
     }
@@ -110,7 +189,7 @@ public class Facture {
      * @return la description du type de carte de crédit
      */
     public String obtenirDescriptionCarteCredit() {
-        String carteCredit = null;
+        String carteCredit = "";
 
         if (this.getTypeCredit() == V) {
             carteCredit = VISA;
@@ -234,11 +313,18 @@ public class Facture {
     public String formaterFacture() {
 
         String factureString = "";
+        String noCredit;
+
+        if (getNoCredit() == null) {
+            noCredit = "";
+        } else {
+            noCredit = getNoCredit();
+        }
 
         factureString += noFacture + ";" + getDateFacture().format(FORMATTER) + ";" + getLocationVehicule().getLocataire().getPrenom() + " "
                 + getLocationVehicule().getLocataire().getNom() + ";" + getLocationVehicule().getLocataire().getNumeroTelephone()
                 + ";" + getLocationVehicule().getLocataire().getNumeroPermisConduire() + ";" + obtenirDescriptionModePaiement() + ";"
-                + obtenirDescriptionCarteCredit() + ";" + getNoCredit() + ";";
+                + obtenirDescriptionCarteCredit() + ";" + noCredit + ";";
 
         VehiculeLoue[] vehiculeLoues = getLocationVehicule().getVehiculesLoues();
 

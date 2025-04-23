@@ -9,8 +9,9 @@ import java.time.LocalDateTime;
  * StatistiqueVentes : Cette classe contient le nombre de
  * véhicules hybrides et électriques loués
  *
- * @author Love-Mary Victor / Sami lies Mouzai
- * @since 31 mars 2025
+ * @author Love-Mary Victor (VICL12559701), Sami Lies Mouzai (MOUS27039501)
+ * @version : 23 Avril, 2025
+ * @github : https://github.com/LoveyouMaryme/TP3
  */
 public class StatistiquesVehiculesLoues {
 
@@ -112,6 +113,7 @@ public class StatistiquesVehiculesLoues {
         System.out.printf("\nIntermédiaire %7d %15d", obtenirNbVehiculesLoues(Vehicule.H, Vehicule.I),  obtenirNbVehiculesLoues(Vehicule.E, Vehicule.I));
         System.out.printf("\nGrand %15d %15d\n\n",  obtenirNbVehiculesLoues(Vehicule.H, Vehicule.G),  obtenirNbVehiculesLoues(Vehicule.E, Vehicule.G));
         System.out.println(Facture.BORDURE);
+        System.out.println();
         System.out.println();
 
     }
